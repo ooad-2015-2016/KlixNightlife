@@ -1,7 +1,7 @@
 # KlixNightlife
 
 KlixNightlife
-1. Elza Kalac
-2. Alem Luckin
-3. Amer Kadic
-4. Nermin Imamovic
+1. Elza Kalač
+2. Alem Lučkin
+3. Amer Kadić
+4. Nermin Imamović
