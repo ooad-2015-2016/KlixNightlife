@@ -2,7 +2,6 @@
 
 ## Sistem za
 
-KlixNightlife
 1. Elza Kalač  
 2. Alem Lučkin  
 3. Amer Kadić  
@@ -14,27 +13,28 @@ NightLife Advisor je Windows Universal aplikacija koja će pomoći (mladim) ljud
 
 #### Opis procesa: 
 
-Vlasnik resotrana će se moći login u sistem, gdje može dodati informacije o svom objektu, dodati slike u foto galeriju koja će biti prikazana posjetiocima sistema.
-Posjetioc sistema - ili obicni korisnik ce imati uvid u ugostiteljske objekte, u fotogalerije, moci ce ocjenjivati lokale, ostavljati dojmove, te pretraživati iste, dijeliti iste po drustvenim mrežama.
-Administrator ce imati uvid u sistem, brisati ponudu iz sistema...
+Vlasnik resotrana će se moći login u sistem, gdje može dodati novi objekat(uz prethodnu provjeru), obrisati objekat, dodati slike objekta, najaviti nastupe ili druge događaje. 
+Posjetioc sistema ima uvid u ugostiteljske objekte, u fotogalerije, ocjenjuje ih, ostavljati dojmove, pretraživati iste(po raznim kriterijima), dijeliti iste po drustvenim mrežama.
+Administrator je zadužen za nadgledanje sistema, i eventualno uklanjanje neprimjerenim fotografija i komentara. 
 
 #### Funkcionalnosti: 
 
-- Registracija objekata u sistem (Vlasnik objekta)
+- Registracija u sistem (Vlasnik objekta)
+- Dodavanje i brisanje objekata (Vlasnik objekata)
 - Dodavanje fotografija, kao i najava nastupa i događaja (Vlasnik objekta)
 - Ocjenjivanje objekata (Gost/Korisnik)
-- Ostavljanje komentara (Gost/korisnik)
+- Ostavljanje komentara (Gost/Korisnik)
+- Prijavljivanje neprimjerenog sadržava (Gost/Korisnik i/ili Vlasnik objekta)
+- Pretraga objekata (Gost/Korisnik)
 - Djeljenje na drustvenim mrezama (Gost/Korisnik)
 - Odobravanje objekata (Administrator)
 - Uklanjanje neprimjerenih fotografija i komentara (Administrator)
 
 #### Akteri: 
 
-Vlasnik objekta - koristi sistem za promociju
-
-Posjetioc portala - 
-
-Administrator - nadgleda sistem
+Vlasnik objekta - koristi sistem za promociju  
+Posjetioc portala - koristi sistem za pretragu i ocjenjivanje/komentarisanje    
+Administrator - nadgleda sistem  
 
 
 
