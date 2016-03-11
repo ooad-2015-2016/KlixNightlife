@@ -14,7 +14,7 @@ NightLife Advisor je Windows Universal aplikacija koja će pomoći (mladim) ljud
 #### Opis procesa: 
 
 Vlasnik objekta će se moći prijaviti u sistem, gdje može dodati novi objekat(uz prethodnu provjeru), obrisati objekat, dodati slike objekta, najaviti nastupe ili druge događaje. 
-Posjetioc sistema ima uvid u ugostiteljske objekte, u fotogalerije, ocjenjuje ih, ostavljati dojmove, pretraživati iste(po raznim kriterijima), dijeliti iste po drustvenim mrežama.
+Posjetioc sistema ima uvid u ugostiteljske objekte, u fotogalerije, ocjenjuje ih, ostavljati dojmove, pretražuje iste(po raznim kriterijima), dijeliti iste po drustvenim mrežama.
 Administrator je zadužen za nadgledanje sistema, i eventualno uklanjanje neprimjerenim fotografija i komentara. 
 
 #### Funkcionalnosti: 
