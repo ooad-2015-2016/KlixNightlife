@@ -20,16 +20,20 @@ Administrator ce imati uvid u sistem, brisati ponudu iz sistema...
 
 #### Funkcionalnosti: 
 
-•	Mogucnost unosa lokala, fotogalerije…
-•	Mogucnost pretrazivanja lokala i sortiranje po raznim kriterijima
-•	Mogucnost ocjenjivanja lokala
-•	Mogucnost davanja kritika
-•	Mogucost…
+- Registracija objekata u sistem (Vlasnik objekta)
+- Dodavanje fotografija, kao i najava nastupa i događaja (Vlasnik objekta)
+- Ocjenjivanje objekata (Gost/Korisnik)
+- Ostavljanje komentara (Gost/korisnik)
+- Djeljenje na drustvenim mrezama (Gost/Korisnik)
+- Odobravanje objekata (Administrator)
+- Uklanjanje neprimjerenih fotografija i komentara (Administrator)
 
 #### Akteri: 
 
-Vlasnik lokala - osoba koja ima mogucnost da unosi ponudu za svoj ugostiteljski objekat
-Posjetioc portala - moze da cita ponudu, ocjenjuje, daje kritiku, dijeli po drustvenim mrezama
+Vlasnik objekta - koristi sistem za promociju
+
+Posjetioc portala - 
+
 Administrator - nadgleda sistem
 
 
