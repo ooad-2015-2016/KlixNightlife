@@ -10,7 +10,7 @@
 
 #### Opis teme: 
 
-NightLife Advisor je Windows Universal aplikacija koja će pomoći (mladim) ljudima da riješe nedoumicu gdje izaći. Korisnici mogu pretraživati klubove, restorane, kafiće po lokaciji, imenu (cjenovnom rangu), ostavljati svoje utiske, ocjenjivati ih, te podjeliti sa drugima svoja iskustva. Vlasnici ugostiteljskih objekata mogu preko aplikacije prestaviti svoju ponudu, najavljivati događaje, nastupe, odnosno pokušati zainteresovati ljude da ih posjete.
+NightLife Adviser je Windows Universal aplikacija koja će pomoći (mladim) ljudima da riješe nedoumicu gdje izaći. Korisnici mogu pretraživati klubove, restorane, kafiće po lokaciji, imenu (cjenovnom rangu), ostavljati svoje utiske, ocjenjivati ih, te podjeliti sa drugima svoja iskustva. Vlasnici ugostiteljskih objekata mogu preko aplikacije prestaviti svoju ponudu, najavljivati događaje, nastupe, odnosno pokušati zainteresovati ljude da ih posjete.
 
 #### Opis procesa: 
 
