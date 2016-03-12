@@ -1,11 +1,11 @@
 ﻿# KlixNight Adviser
 
-## Sistem za
+## Sistem za reklamiranje i pretrazivanje ugostiteljskih objekata
 
 1. Elza Kalač  
 2. Alem Lučkin  
 3. Amer Kadić  
-4. Amer Kodzaga
+4. Amer Kodžaga
 5. Nermin Imamović  
 
 #### Opis teme: 
