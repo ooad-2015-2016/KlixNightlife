@@ -1,6 +1,6 @@
 ﻿# KlixNight Adviser
 
-## Sistem za reklamiranje i pretrazivanje ugostiteljskih objekata
+## Sistem za reklamiranje i pretraživanje ugostiteljskih objekata
 
 1. Elza Kalač  
 2. Alem Lučkin  
