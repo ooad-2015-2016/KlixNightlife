@@ -25,7 +25,7 @@ Administrator je zadužen za nadgledanje sistema, i eventualno uklanjanje neprim
 - Dodavanje fotografija, kao i najava nastupa i događaja (Vlasnik objekta)
 - Ocjenjivanje objekata (Gost/Korisnik)
 - Ostavljanje komentara (Gost/Korisnik)
-- Prijavljivanje neprimjerenog sadržava (Gost/Korisnik i/ili Vlasnik objekta)
+- Prijavljivanje neprimjerenog sadržaja (Gost/Korisnik i/ili Vlasnik objekta)
 - Pretraga objekata (Gost/Korisnik)
 - Djeljenje na drustvenim mrezama (Gost/Korisnik)
 - Odobravanje(provjeravanje) objekata (Administrator)
@@ -34,7 +34,7 @@ Administrator je zadužen za nadgledanje sistema, i eventualno uklanjanje neprim
 #### Akteri: 
 
 Vlasnik objekta - koristi sistem za promociju  
-Posjetioc portala - koristi sistem za pretragu i/ili ocjenjivanje/komentarisanje    
+Posjetilac portala - koristi sistem za pretragu i/ili ocjenjivanje/komentarisanje    
 Administrator - nadgleda sistem  
 
 
