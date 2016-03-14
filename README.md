@@ -39,9 +39,9 @@ Administrator se može login-ati, a nakon toga ima uvid u sve što se dešava u 
 #### Akteri: 
 
 Vlasnik objekta - koristi sistem za promociju  
-Gost - koristi sistem za pretragu 
-Registrovani korisnik - koristi sistem za pretragu i/ili ocjenjivanje    
-Administrator - nadgleda sistem  
+Gost - koristi sistem za pretragu   
+Registrovani korisnik - koristi sistem za pretragu i/ili ocjenjivanje      
+Administrator - nadgleda sistem    
 
 
 
