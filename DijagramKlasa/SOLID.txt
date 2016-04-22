@@ -1,0 +1,19 @@
+1.Princip pojedinaène odgovornosti 
+
+Klasa treba da ima samo jednu ulogu, odnosno ne treba da brine o svemu. Ovaj princip je ispoštovan jer nijedna klasa nema dvije uloge. Korisnik opisuje registrovanog korisnika, a greska bi bila kada bi korisnik mogao biti administrator sa posebnim privilegijama, jer tada bi klasa korisnik "brinula" o više stvari, ugl, zakomplikovalo bi se baš.
+
+2.Otvoreno zatvoren princip 
+
+?
+
+3. Liskov princip zamjene
+
+Podtipovi moraju biti zamjenjeni osnovnim tipovima. Administrator je u jednom trenutku gost, ali te dvije uloge su totalno razlièite, pa bi bila greška da naslijeðujemo Administratora iz Gosta, jer Administrator nema id, odnosno suvišan je. 
+
+4.Princip inverzije ovisnosti 
+
+Sa UML taèke gledišta, ovaj princip je veoma lako provjeriti. Pratimo svaku strelicu na UML dijagramu i provjerite da li je cilj strelice interfejs ili jedna apstraktna klasa. U našem sluèaju gost nije apstraktna klasa, jer treba da imamo instancu gosta, tako da nije baš praktièno da gost bude apstraktna klasa. Gost se neæe mjenjati, i tako je princip invezne ovisnosti ispoštovan. 
+
+5.Princip izoliranja interfejsa
+
+Klasa ne treba da ima milion metoda, koje su nepotrebne. Naše klase nemaju još nijednu, osim getera i setera, pa je ovo ispoštovano. 
