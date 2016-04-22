@@ -1,4 +1,6 @@
-﻿using System;
+﻿using KlixNightAdviser.KorisnikBaza.Models;
+using Microsoft.Data.Entity;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -33,6 +35,11 @@ namespace KlixNightAdviser
                 Microsoft.ApplicationInsights.WindowsCollectors.Session);
             this.InitializeComponent();
             this.Suspending += OnSuspending;
+            using (var db = new KorisnikDBContext())
+            {
+                db.Database.ApplyMigrations();
+                DefaultPodaci.Initialize(db);
+            }
         }
 
         /// <summary>
