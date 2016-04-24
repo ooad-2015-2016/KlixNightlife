@@ -13,7 +13,7 @@ namespace KlixNightAdviser.KorisnikBaza.Models
 {
     class VlasnikDBContext : DbContext
     {
-        public DbSet<Korisnik> Korisnici { get; set; }
+        public DbSet<Vlasnik> Vlasnici { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {

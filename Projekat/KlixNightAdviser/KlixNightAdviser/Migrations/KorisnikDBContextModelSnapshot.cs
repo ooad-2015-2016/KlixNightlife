@@ -6,7 +6,7 @@ using KlixNightAdviser.KorisnikBaza.Models;
 
 namespace KlixNightAdviserMigrations
 {
-    [ContextType(typeof(KorisnikDBContext))]
+    [ContextType(typeof(VlasnikDBContext))]
     partial class KorisnikDBContextModelSnapshot : ModelSnapshot
     {
         public override void BuildModel(ModelBuilder builder)

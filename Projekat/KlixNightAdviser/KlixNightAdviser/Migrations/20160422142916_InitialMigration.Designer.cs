@@ -6,7 +6,7 @@ using KlixNightAdviser.KorisnikBaza.Models;
 
 namespace KlixNightAdviserMigrations
 {
-    [ContextType(typeof(KorisnikDBContext))]
+    [ContextType(typeof(VlasnikDBContext))]
     partial class InitialMigration
     {
         public override string Id

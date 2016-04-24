@@ -11,10 +11,10 @@ namespace KlixNightAdviser.KorisnikBaza.Models
     {
         public static void Initialize(VlasnikDBContext context)
         {
-            if (!context.Korisnici.Any())
+            if (!context.Vlasnici.Any())
             {
-                context.Korisnici.AddRange(
-                new Korisnik("Proba", "probno", "sifra", DateTime.Now, "mail", Spol.muski));
+                context.Vlasnici.AddRange(
+                new Vlasnik("Proba", "probno", "sifra", DateTime.Now, "mail", Spol.muski));
                 
                 context.SaveChanges();
             }

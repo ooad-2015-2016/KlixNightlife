@@ -35,7 +35,7 @@ namespace KlixNightAdviser
                 Microsoft.ApplicationInsights.WindowsCollectors.Session);
             this.InitializeComponent();
             this.Suspending += OnSuspending;
-            using (var db = new KorisnikDBContext())
+            using (var db = new VlasnikDBContext())
             {
                 db.Database.ApplyMigrations();
                 DefaultPodaci.Initialize(db);
