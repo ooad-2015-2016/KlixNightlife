@@ -99,6 +99,7 @@
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
     <Compile Include="Gost.cs" />
+    <Compile Include="Komentar.cs" />
     <Compile Include="KorisnikBaza\Models\DefaultPodaci.cs" />
     <Compile Include="KorisnikBaza\Models\Korisnik.cs" />
     <Compile Include="KorisnikBaza\Models\KorisnikDBContext.cs" />
@@ -110,7 +111,12 @@
       <DependentUpon>20160422142916_InitialMigration.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\KorisnikDBContextModelSnapshot.cs" />
+    <Compile Include="ObjekatBaza\Models\DefaultPodaci.cs" />
+    <Compile Include="ObjekatBaza\Models\Objekat.cs" />
+    <Compile Include="ObjekatBaza\Models\ObjekatDbContext .cs" />
+    <Compile Include="Ocjena.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Vlasnik.cs" />
   </ItemGroup>
   <ItemGroup>
     <AppxManifest Include="Package.appxmanifest">
@@ -152,6 +158,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="KorisnikBaza\Views\" />
+    <Folder Include="ObjekatBaza\Views\" />
   </ItemGroup>
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
     <VisualStudioVersion>14.0</VisualStudioVersion>
