@@ -4,9 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace KlixNightAdviser
+namespace KlixNightAdviser.AdviserBaza.Model
 {
-    class Vlasnik
+    public enum Spol
     {
+        Musko,
+        Zensko
     }
 }

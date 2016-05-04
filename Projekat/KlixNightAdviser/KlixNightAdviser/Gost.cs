@@ -6,10 +6,10 @@ using System.Threading.Tasks;
 
 namespace KlixNightAdviser
 {
-    class Gost
+    public class Gost
     {
-        public Gost(string id)
-        { this.id = id; }
+        //public Gost(string id)
+        //{ this.id = id; }
         string id { get; set; }
         
     }
