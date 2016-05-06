@@ -39,6 +39,8 @@ namespace KlixNightAdviser
         private void button1_Click(object sender, RoutedEventArgs e)
         {
             //pokrece se forma registacija 
+            // treba dodati da se nekako inicijalizira koji tip treba pokrenuti
+            // pitati Cogu 
             
             this.Frame.Navigate(typeof(Registracija));
             

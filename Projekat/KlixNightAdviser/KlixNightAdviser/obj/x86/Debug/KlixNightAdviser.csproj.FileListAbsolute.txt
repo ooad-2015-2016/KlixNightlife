@@ -719,7 +719,6 @@ C:\Users\PC\Desktop\SRANJE\Projekat\KlixNightAdviser\KlixNightAdviser\bin\x86\De
 C:\Users\PC\Desktop\SRANJE\Projekat\KlixNightAdviser\KlixNightAdviser\bin\x86\Debug\EntityFramework.Commands.dll
 C:\Users\PC\Desktop\SRANJE\Projekat\KlixNightAdviser\KlixNightAdviser\bin\x86\Debug\EntityFramework.Commands.xml
 C:\Users\PC\Desktop\SRANJE\Projekat\KlixNightAdviser\KlixNightAdviser\bin\x86\Debug\App.xbf
-C:\Users\PC\Desktop\SRANJE\Projekat\KlixNightAdviser\KlixNightAdviser\bin\x86\Debug\DodavanjeClanka.xbf
 C:\Users\PC\Desktop\SRANJE\Projekat\KlixNightAdviser\KlixNightAdviser\bin\x86\Debug\MainPage.xbf
 C:\Users\PC\Desktop\SRANJE\Projekat\KlixNightAdviser\KlixNightAdviser\bin\x86\Debug\Login.xbf
 C:\Users\PC\Desktop\SRANJE\Projekat\KlixNightAdviser\KlixNightAdviser\bin\x86\Debug\Placanje.xbf
@@ -859,8 +858,6 @@ C:\Users\PC\Desktop\SRANJE\Projekat\KlixNightAdviser\KlixNightAdviser\bin\x86\De
 C:\Users\PC\Desktop\SRANJE\Projekat\KlixNightAdviser\KlixNightAdviser\obj\x86\Debug\KlixNightAdviser.csprojResolveAssemblyReference.cache
 C:\Users\PC\Desktop\SRANJE\Projekat\KlixNightAdviser\KlixNightAdviser\obj\x86\Debug\App.g.i.cs
 C:\Users\PC\Desktop\SRANJE\Projekat\KlixNightAdviser\KlixNightAdviser\obj\x86\Debug\App.g.cs
-C:\Users\PC\Desktop\SRANJE\Projekat\KlixNightAdviser\KlixNightAdviser\obj\x86\Debug\DodavanjeClanka.g.i.cs
-C:\Users\PC\Desktop\SRANJE\Projekat\KlixNightAdviser\KlixNightAdviser\obj\x86\Debug\DodavanjeClanka.g.cs
 C:\Users\PC\Desktop\SRANJE\Projekat\KlixNightAdviser\KlixNightAdviser\obj\x86\Debug\MainPage.g.i.cs
 C:\Users\PC\Desktop\SRANJE\Projekat\KlixNightAdviser\KlixNightAdviser\obj\x86\Debug\MainPage.g.cs
 C:\Users\PC\Desktop\SRANJE\Projekat\KlixNightAdviser\KlixNightAdviser\obj\x86\Debug\Login.g.i.cs
@@ -869,12 +866,10 @@ C:\Users\PC\Desktop\SRANJE\Projekat\KlixNightAdviser\KlixNightAdviser\obj\x86\De
 C:\Users\PC\Desktop\SRANJE\Projekat\KlixNightAdviser\KlixNightAdviser\obj\x86\Debug\Placanje.g.cs
 C:\Users\PC\Desktop\SRANJE\Projekat\KlixNightAdviser\KlixNightAdviser\obj\x86\Debug\XamlTypeInfo.g.cs
 C:\Users\PC\Desktop\SRANJE\Projekat\KlixNightAdviser\KlixNightAdviser\obj\x86\Debug\App.xaml
-C:\Users\PC\Desktop\SRANJE\Projekat\KlixNightAdviser\KlixNightAdviser\obj\x86\Debug\DodavanjeClanka.xaml
 C:\Users\PC\Desktop\SRANJE\Projekat\KlixNightAdviser\KlixNightAdviser\obj\x86\Debug\MainPage.xaml
 C:\Users\PC\Desktop\SRANJE\Projekat\KlixNightAdviser\KlixNightAdviser\obj\x86\Debug\Login.xaml
 C:\Users\PC\Desktop\SRANJE\Projekat\KlixNightAdviser\KlixNightAdviser\obj\x86\Debug\Placanje.xaml
 C:\Users\PC\Desktop\SRANJE\Projekat\KlixNightAdviser\KlixNightAdviser\obj\x86\Debug\App.xbf
-C:\Users\PC\Desktop\SRANJE\Projekat\KlixNightAdviser\KlixNightAdviser\obj\x86\Debug\DodavanjeClanka.xbf
 C:\Users\PC\Desktop\SRANJE\Projekat\KlixNightAdviser\KlixNightAdviser\obj\x86\Debug\MainPage.xbf
 C:\Users\PC\Desktop\SRANJE\Projekat\KlixNightAdviser\KlixNightAdviser\obj\x86\Debug\Login.xbf
 C:\Users\PC\Desktop\SRANJE\Projekat\KlixNightAdviser\KlixNightAdviser\obj\x86\Debug\Placanje.xbf

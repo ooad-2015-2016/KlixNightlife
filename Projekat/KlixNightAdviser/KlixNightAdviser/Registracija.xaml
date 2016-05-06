@@ -75,7 +75,9 @@
             <ListViewItem Content="muski"/>
             <ListViewItem Content="zenski"/>
         </ComboBox>
-        <TextBlock x:Name="textBlock6" HorizontalAlignment="Left" Margin="27.333,253,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top"/>
+        <TextBlock x:Name="textBlock6" HorizontalAlignment="Left" Margin="27.333,253,0,0" TextWrapping="Wrap" Text="Spol" VerticalAlignment="Top"/>
+        <Button x:Name="button" Content="Done" HorizontalAlignment="Left" Margin="147,452,0,0" VerticalAlignment="Top" Width="157" Click="button_Click"/>
+        <DatePicker HorizontalAlignment="Left" Margin="27,290,0,0" VerticalAlignment="Top" Width="95" Height="44" Opacity="0.77"/>
 
     </Grid>
 </Page>

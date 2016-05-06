@@ -132,23 +132,21 @@ namespace KlixNightAdviser.KlixNightAdviser_XamlTypeInfo
 
         private void InitTypeTables()
         {
-            _typeNameTable = new string[7];
-            _typeNameTable[0] = "KlixNightAdviser.DodavanjeClanka";
+            _typeNameTable = new string[6];
+            _typeNameTable[0] = "KlixNightAdviser.Login";
             _typeNameTable[1] = "Windows.UI.Xaml.Controls.Page";
             _typeNameTable[2] = "Windows.UI.Xaml.Controls.UserControl";
-            _typeNameTable[3] = "KlixNightAdviser.Login";
-            _typeNameTable[4] = "KlixNightAdviser.MainPage";
-            _typeNameTable[5] = "KlixNightAdviser.Placanje";
-            _typeNameTable[6] = "KlixNightAdviser.Registracija";
+            _typeNameTable[3] = "KlixNightAdviser.MainPage";
+            _typeNameTable[4] = "KlixNightAdviser.Placanje";
+            _typeNameTable[5] = "KlixNightAdviser.Registracija";
 
-            _typeTable = new global::System.Type[7];
-            _typeTable[0] = typeof(global::KlixNightAdviser.DodavanjeClanka);
+            _typeTable = new global::System.Type[6];
+            _typeTable[0] = typeof(global::KlixNightAdviser.Login);
             _typeTable[1] = typeof(global::Windows.UI.Xaml.Controls.Page);
             _typeTable[2] = typeof(global::Windows.UI.Xaml.Controls.UserControl);
-            _typeTable[3] = typeof(global::KlixNightAdviser.Login);
-            _typeTable[4] = typeof(global::KlixNightAdviser.MainPage);
-            _typeTable[5] = typeof(global::KlixNightAdviser.Placanje);
-            _typeTable[6] = typeof(global::KlixNightAdviser.Registracija);
+            _typeTable[3] = typeof(global::KlixNightAdviser.MainPage);
+            _typeTable[4] = typeof(global::KlixNightAdviser.Placanje);
+            _typeTable[5] = typeof(global::KlixNightAdviser.Registracija);
         }
 
         private int LookupTypeIndexByName(string typeName)
@@ -183,11 +181,10 @@ namespace KlixNightAdviser.KlixNightAdviser_XamlTypeInfo
             return -1;
         }
 
-        private object Activate_0_DodavanjeClanka() { return new global::KlixNightAdviser.DodavanjeClanka(); }
-        private object Activate_3_Login() { return new global::KlixNightAdviser.Login(); }
-        private object Activate_4_MainPage() { return new global::KlixNightAdviser.MainPage(); }
-        private object Activate_5_Placanje() { return new global::KlixNightAdviser.Placanje(); }
-        private object Activate_6_Registracija() { return new global::KlixNightAdviser.Registracija(); }
+        private object Activate_0_Login() { return new global::KlixNightAdviser.Login(); }
+        private object Activate_3_MainPage() { return new global::KlixNightAdviser.MainPage(); }
+        private object Activate_4_Placanje() { return new global::KlixNightAdviser.Placanje(); }
+        private object Activate_5_Registracija() { return new global::KlixNightAdviser.Registracija(); }
 
         private global::Windows.UI.Xaml.Markup.IXamlType CreateXamlType(int typeIndex)
         {
@@ -199,9 +196,9 @@ namespace KlixNightAdviser.KlixNightAdviser_XamlTypeInfo
             switch (typeIndex)
             {
 
-            case 0:   //  KlixNightAdviser.DodavanjeClanka
+            case 0:   //  KlixNightAdviser.Login
                 userType = new global::KlixNightAdviser.KlixNightAdviser_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_0_DodavanjeClanka;
+                userType.Activator = Activate_0_Login;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
@@ -214,30 +211,23 @@ namespace KlixNightAdviser.KlixNightAdviser_XamlTypeInfo
                 xamlType = new global::KlixNightAdviser.KlixNightAdviser_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 3:   //  KlixNightAdviser.Login
+            case 3:   //  KlixNightAdviser.MainPage
                 userType = new global::KlixNightAdviser.KlixNightAdviser_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_3_Login;
+                userType.Activator = Activate_3_MainPage;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 4:   //  KlixNightAdviser.MainPage
+            case 4:   //  KlixNightAdviser.Placanje
                 userType = new global::KlixNightAdviser.KlixNightAdviser_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_4_MainPage;
+                userType.Activator = Activate_4_Placanje;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 5:   //  KlixNightAdviser.Placanje
+            case 5:   //  KlixNightAdviser.Registracija
                 userType = new global::KlixNightAdviser.KlixNightAdviser_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_5_Placanje;
-                userType.SetIsLocalType();
-                xamlType = userType;
-                break;
-
-            case 6:   //  KlixNightAdviser.Registracija
-                userType = new global::KlixNightAdviser.KlixNightAdviser_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_6_Registracija;
+                userType.Activator = Activate_5_Registracija;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
