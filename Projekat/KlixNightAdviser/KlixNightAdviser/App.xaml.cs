@@ -16,6 +16,7 @@ using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
+using KlixNightAdviser.AdviserBaza.Model;
 
 namespace KlixNightAdviser
 {
@@ -35,11 +36,11 @@ namespace KlixNightAdviser
                 Microsoft.ApplicationInsights.WindowsCollectors.Session);
             this.InitializeComponent();
             this.Suspending += OnSuspending;
-            //using (var db = new KorisnikDBContext())
-            //{
-            //    db.Database.ApplyMigrations();
-            //    DefaultPodaci.Initialize(db);
-            //}
+            using (var db = new AdviserDBContext())
+            {
+                db.Database.ApplyMigrations();
+                //DefaultPodaci.Initialize(db);
+            }
         }
 
         /// <summary>

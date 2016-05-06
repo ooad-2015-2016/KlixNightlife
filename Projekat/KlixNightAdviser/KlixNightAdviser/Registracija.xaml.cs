@@ -32,7 +32,7 @@ namespace KlixNightAdviser
         }
         public Registracija(Tip tp)
         {
-       
+            t = tp;
             this.InitializeComponent();
            // if (tp==Tip.Korisnik) ne prikazuj neke djelove forme
             //  if (tp==Tip.Vlasnik) prikazi ono sto vlasniku treba
@@ -44,10 +44,24 @@ namespace KlixNightAdviser
             Spol s;
             if (comboBox.SelectedIndex == 0) s = Spol.Musko;
             else s = Spol.Zensko;
-            //if (t==Tip.Korisnik)
+            
+            if (t==Tip.Korisnik)
             {
+                
                 Korisnik novi = new Korisnik(textBox4.Text, textBox5.Text, textBox3.Text, textBox.Text, textBox2.Text, s);
                 textBox.Text = "";
+                textBox1.Text = "";
+                textBox2.Text = "";
+                textBox3.Text = "";
+                textBox4.Text = "";
+                textBox5.Text = "";
+                //dodati neku obavjest da je korisnik dodan 
+                // i dodati korisnika u bazu
+
+            }
+            else if (t==Tip.Vlasnik)
+            {
+                //dodati vlasnika, al i dalje ne znam kako proslijediti nesto stranici
             }
 
         }

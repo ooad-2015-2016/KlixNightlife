@@ -42,7 +42,7 @@ namespace KlixNightAdviser
             // treba dodati da se nekako inicijalizira koji tip treba pokrenuti
             // pitati Cogu 
             
-            this.Frame.Navigate(typeof(Registracija));
+            this.Frame.Navigate(typeof(Registracija), Tip.Korisnik);
             
         }
     }
