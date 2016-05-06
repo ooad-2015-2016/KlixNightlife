@@ -13,28 +13,29 @@ using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
 
-// The Blank Page item template is documented at http://go.microsoft.com/fwlink/?LinkId=402352&clcid=0x409
+// The Blank Page item template is documented at http://go.microsoft.com/fwlink/?LinkId=234238
 
 namespace KlixNightAdviser
 {
     /// <summary>
     /// An empty page that can be used on its own or navigated to within a Frame.
-    /// </summary>
-    public sealed partial class MainPage : Page
+    /// </summary>ž
+    public enum Tip { Vlasnik, Korisnik }
+    public sealed partial class Registracija : Page
     {
-        public MainPage()
+        public Tip t;
+        public Registracija()
         {
+
             this.InitializeComponent();
         }
-
-        private void button_Click(object sender, RoutedEventArgs e)
+        public Registracija(Tip tp)
         {
-            //Pokrenuti formu za registraciju vlasnika
-        }
-
-        private void button1_Click(object sender, RoutedEventArgs e)
-        {         
-            this.Frame.Navigate(typeof(Login));
+       
+            this.InitializeComponent();
+           // if (tp==Tip.Korisnik) ne prikazuj neke djelove forme
+            //  if (tp==Tip.Vlasnik) prikazi ono sto vlasniku treba
+            //Dodati jos po nesto za vlasnika, neke informacije
         }
     }
 }

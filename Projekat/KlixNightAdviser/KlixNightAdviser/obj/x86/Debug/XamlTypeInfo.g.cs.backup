@@ -187,7 +187,6 @@ namespace KlixNightAdviser.KlixNightAdviser_XamlTypeInfo
         private object Activate_3_Login() { return new global::KlixNightAdviser.Login(); }
         private object Activate_4_MainPage() { return new global::KlixNightAdviser.MainPage(); }
         private object Activate_5_Placanje() { return new global::KlixNightAdviser.Placanje(); }
-        private object Activate_6_Registracija() { return new global::KlixNightAdviser.Registracija(); }
 
         private global::Windows.UI.Xaml.Markup.IXamlType CreateXamlType(int typeIndex)
         {
@@ -237,7 +236,6 @@ namespace KlixNightAdviser.KlixNightAdviser_XamlTypeInfo
 
             case 6:   //  KlixNightAdviser.Registracija
                 userType = new global::KlixNightAdviser.KlixNightAdviser_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_6_Registracija;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;

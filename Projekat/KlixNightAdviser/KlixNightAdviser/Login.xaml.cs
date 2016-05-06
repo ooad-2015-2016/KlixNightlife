@@ -26,5 +26,22 @@ namespace KlixNightAdviser
         {
             this.InitializeComponent();
         }
+
+        private void button_Click(object sender, RoutedEventArgs e)
+        {
+            //provjeriti dali ima uopste ovaj korisnik u bazi
+            //ukoliko nema, izbaciti poruku da nije username okey 
+            //ukoliko ima, a sifra je pogresna, obavjest da je pogresna
+            //a ukoliko je i username i sifra tacna, onda se vraca na pocetnu formu
+            //koja sad vise nema login i ono vlasnik se ugostiteljskog objekta, vec samo ima logout button
+        }
+
+        private void button1_Click(object sender, RoutedEventArgs e)
+        {
+            //pokrece se forma registacija 
+            
+            this.Frame.Navigate(typeof(Registracija));
+            
+        }
     }
 }

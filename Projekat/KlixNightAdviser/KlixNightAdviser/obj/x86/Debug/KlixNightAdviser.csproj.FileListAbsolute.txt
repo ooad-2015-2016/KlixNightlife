@@ -954,3 +954,8 @@ C:\Users\PC\Desktop\SRANJE\Projekat\KlixNightAdviser\KlixNightAdviser\obj\x86\De
 C:\Users\PC\Desktop\SRANJE\Projekat\KlixNightAdviser\KlixNightAdviser\obj\x86\Debug\qualifiers.txt.intermediate
 C:\Users\PC\Desktop\SRANJE\Projekat\KlixNightAdviser\KlixNightAdviser\obj\x86\Debug\MultipleQualifiersPerDimensionFound.txt
 C:\Users\PC\Desktop\SRANJE\Projekat\KlixNightAdviser\KlixNightAdviser\obj\x86\Debug\ProjectArchitectures.txt
+C:\Users\PC\Desktop\SRANJE\Projekat\KlixNightAdviser\KlixNightAdviser\bin\x86\Debug\Registracija.xbf
+C:\Users\PC\Desktop\SRANJE\Projekat\KlixNightAdviser\KlixNightAdviser\obj\x86\Debug\Registracija.g.i.cs
+C:\Users\PC\Desktop\SRANJE\Projekat\KlixNightAdviser\KlixNightAdviser\obj\x86\Debug\Registracija.g.cs
+C:\Users\PC\Desktop\SRANJE\Projekat\KlixNightAdviser\KlixNightAdviser\obj\x86\Debug\Registracija.xaml
+C:\Users\PC\Desktop\SRANJE\Projekat\KlixNightAdviser\KlixNightAdviser\obj\x86\Debug\Registracija.xbf
