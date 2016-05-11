@@ -11,7 +11,7 @@ namespace KlixNightAdviser.AdviserBaza.Model
     {
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int KorisnikId { get; set; }
-        public string Ime { get; set; }
+        public string ImeIPrezime { get; set; }
         //public DateTime DatumRodjenja { get; set; }
         public string KorisnickoIme { get; set; }
         public string EMail { get; set; }
@@ -20,8 +20,9 @@ namespace KlixNightAdviser.AdviserBaza.Model
         public string Adresa { get; set; }
         public string BrojTelefona { get; set; }
         
+        //evo, da bude cisto model, samo atributi 
 
-        public Korisnik(string ime, string adresa, string brt, string korisnicko, string email, Spol s)
+       /* public Korisnik(string ime, string adresa, string brt, string korisnicko, string email, Spol s)
         {
             Ime = ime;
 
@@ -31,6 +32,6 @@ namespace KlixNightAdviser.AdviserBaza.Model
             DatumRegistracije = DateTime.Now;
             Adresa = adresa;
             BrojTelefona = brt;
-        }
+        } */
     }
 }

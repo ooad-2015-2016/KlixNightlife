@@ -29,6 +29,7 @@ namespace KlixNightAdviser
         /// Initializes the singleton application object.  This is the first line of authored code
         /// executed, and as such is the logical equivalent of main() or WinMain().
         /// </summary>
+        public string tip { get; set; }
         public App()
         {
             Microsoft.ApplicationInsights.WindowsAppInitializer.InitializeAsync(
@@ -42,7 +43,8 @@ namespace KlixNightAdviser
                 //DefaultPodaci.Initialize(db);
                 //Krahira nakon ovoga izgleda http://prntscr.com/b107y4
                 //ugl ne kreira bazu 
-            }
+            }
+
         }
 
         /// <summary>

@@ -29,20 +29,26 @@ namespace KlixNightAdviser
 
         private void button_Click(object sender, RoutedEventArgs e)
         {
-            //provjeriti dali ima uopste ovaj korisnik u bazi
-            //ukoliko nema, izbaciti poruku da nije username okey 
-            //ukoliko ima, a sifra je pogresna, obavjest da je pogresna
-            //a ukoliko je i username i sifra tacna, onda se vraca na pocetnu formu
-            //koja sad vise nema login i ono vlasnik se ugostiteljskog objekta, vec samo ima logout button
+            var obj = App.Current as App;
+            if (obj.tip=="vlasnik")
+            {
+                //trazi u bazi ima li vlasnika
+
+            }
+            else if (obj.tip=="korisnik")
+            {
+                //provjeriti dali ima uopste ovaj korisnik u bazi
+                //ukoliko nema, izbaciti poruku da nije username okey 
+                //ukoliko ima, a sifra je pogresna, obavjest da je pogresna
+                //a ukoliko je i username i sifra tacna, onda se vraca na pocetnu formu
+            }
         }
 
         private void button1_Click(object sender, RoutedEventArgs e)
         {
-            //pokrece se forma registacija 
-            // treba dodati da se nekako inicijalizira koji tip treba pokrenuti
-            // pitati Cogu 
-            
-            this.Frame.Navigate(typeof(Registracija), Tip.Korisnik);
+            var obj = App.Current as App;
+            obj.tip = "korisnik";
+            this.Frame.Navigate(typeof(Registracija));
             
         }
     }

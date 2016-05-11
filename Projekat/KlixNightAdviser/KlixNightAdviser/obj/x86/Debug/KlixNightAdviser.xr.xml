@@ -40,7 +40,6 @@
       <RootProperty Name="VerticalAlignment" />
       <RootProperty Name="Width" />
       <RootProperty Name="FontFamily" />
-      <RootProperty Name="Height" />
       <RootEvent Name="Click" />
     </RootType>
     <RootType FullName="KlixNightAdviser.Login" />
@@ -48,14 +47,6 @@
       <RootProperty Name="Text" />
     </RootType>
     <RootType FullName="KlixNightAdviser.MainPage" />
-    <RootType FullName="Windows.UI.Xaml.Controls.RadioButton">
-      <RootProperty Name="Content" />
-      <RootProperty Name="HorizontalAlignment" />
-      <RootProperty Name="VerticalAlignment" />
-      <RootProperty Name="Margin" />
-      <RootProperty Name="RenderTransformOrigin" />
-    </RootType>
-    <RootType FullName="KlixNightAdviser.Placanje" />
     <RootType FullName="Windows.UI.Xaml.Controls.ComboBox">
       <RootProperty Name="HorizontalAlignment" />
       <RootProperty Name="Margin" />

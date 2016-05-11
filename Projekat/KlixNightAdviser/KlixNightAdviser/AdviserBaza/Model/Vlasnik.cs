@@ -14,5 +14,6 @@ namespace KlixNightAdviser.AdviserBaza.Model
         public string KorisnickoIme { get; set; }
         public string EMail { get; set; }
         public Spol Spol { get; set; }
+        
     }
 }

@@ -13,7 +13,15 @@ namespace KlixNightAdviser
         {
             if (!context.Korisnici.Any())
             {
-                context.Korisnici.AddRange(new Korisnik("Elza Kalac", "Dragana Kulidžana", "066020564", "ekalac1", "elzaa_95@hotmail.com", Spol.Zensko));
+                Korisnik k = new Korisnik();
+                k.ImeIPrezime = "Elza Kalač";
+                k.Adresa = "Dragana Kulidžana";
+                k.KorisnickoIme = "ekalac1";
+                k.EMail = "elzaa_95@hotmail.com";
+                k.Spol = Spol.Zensko;
+
+
+                context.Korisnici.AddRange(k);
                 context.SaveChanges();
             }
         }

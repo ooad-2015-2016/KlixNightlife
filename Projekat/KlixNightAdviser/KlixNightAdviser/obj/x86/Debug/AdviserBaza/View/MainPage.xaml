@@ -8,12 +8,13 @@
     mc:Ignorable="d">
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-        <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Margin="10,47,0,0" TextWrapping="Wrap" VerticalAlignment="Top">
+        <TextBlock x:ConnectionId='1' x:Name="textBlock" HorizontalAlignment="Left" Margin="10,47,0,0" TextWrapping="Wrap" VerticalAlignment="Top">
         	<Run Text="Dobro"/>
         	<Run Text="d"/>
         	<Run Text="osli u NightLife Adviser"/>
         </TextBlock>
-        <Button x:Name="button" Content="Vlasnik ste objekta ?" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="188,0,0,0" Width="172" FontFamily="Segoe UI Black" Click="button_Click"/>
-        <Button x:Name="button1" Content="Login/Registracija" HorizontalAlignment="Left" Margin="81,489,0,0" VerticalAlignment="Top" Width="181" Click="button1_Click"/>
+        <Button x:ConnectionId='2' x:Name="button" Content="Vlasnik ste objekta ?" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="188,0,0,0" Width="172" FontFamily="Segoe UI Black"                     />
+        <Button x:ConnectionId='3' x:Name="button1" Content="Login/Registracija" HorizontalAlignment="Left" Margin="86,562,0,0" VerticalAlignment="Top" Width="181"                      />
     </Grid>
 </Page>
+

@@ -1,0 +1,19 @@
+﻿<Page
+    x:Class="KlixNightAdviser.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:KlixNightAdviser"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Margin="10,47,0,0" TextWrapping="Wrap" VerticalAlignment="Top">
+        	<Run Text="Dobro"/>
+        	<Run Text="d"/>
+        	<Run Text="osli u NightLife Adviser"/>
+        </TextBlock>
+        <Button x:Name="button" Content="Vlasnik ste objekta ?" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="188,0,0,0" Width="172" FontFamily="Segoe UI Black" Click="button_Click"/>
+        <Button x:Name="button1" Content="Login/Registracija" HorizontalAlignment="Left" Margin="86,562,0,0" VerticalAlignment="Top" Width="181" Click="button1_Click"/>
+    </Grid>
+</Page>

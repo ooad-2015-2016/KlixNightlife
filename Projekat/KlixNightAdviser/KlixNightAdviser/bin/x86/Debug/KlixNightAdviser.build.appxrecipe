@@ -9,16 +9,16 @@
     <SolutionConfiguration>Debug|x86</SolutionConfiguration>
     <PackageArchitecture>x86</PackageArchitecture>
     <PackageIdentityName>c3164270-64b3-48da-88cd-a312709cfb65</PackageIdentityName>
-    <IntermediateOutputPath>C:\Users\PC\Desktop\SRANJE\Projekat\KlixNightAdviser\KlixNightAdviser\obj\x86\Debug\</IntermediateOutputPath>
+    <IntermediateOutputPath>F:\OOAD\Projekat\KlixNightAdviser\KlixNightAdviser\obj\x86\Debug\</IntermediateOutputPath>
   </PropertyGroup>
   <ItemGroup>
-    <AppXManifest Include="C:\Users\PC\Desktop\SRANJE\Projekat\KlixNightAdviser\KlixNightAdviser\bin\x86\Debug\Core\AppxManifest.xml">
+    <AppXManifest Include="F:\OOAD\Projekat\KlixNightAdviser\KlixNightAdviser\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
-    <AppxPackagedFile Include="C:\Users\PC\Desktop\SRANJE\Projekat\KlixNightAdviser\KlixNightAdviser\bin\x86\Debug\KlixNightAdviser.exe">
+    <AppxPackagedFile Include="F:\OOAD\Projekat\KlixNightAdviser\KlixNightAdviser\bin\x86\Debug\KlixNightAdviser.exe">
       <PackagePath>entrypoint\KlixNightAdviser.exe</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\PC\.nuget\packages\EntityFramework.Core\7.0.0-beta6\lib\dotnet\EntityFramework.Core.dll">
@@ -396,55 +396,55 @@
     <AppxPackagedFile Include="C:\Users\PC\.nuget\packages\System.Xml.XmlSerializer\4.0.10\lib\netcore50\System.Xml.XmlSerializer.dll">
       <PackagePath>System.Xml.XmlSerializer.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\PC\Desktop\SRANJE\Projekat\KlixNightAdviser\KlixNightAdviser\ApplicationInsights.config">
+    <AppxPackagedFile Include="F:\OOAD\Projekat\KlixNightAdviser\KlixNightAdviser\ApplicationInsights.config">
       <PackagePath>ApplicationInsights.config</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\PC\Desktop\SRANJE\Projekat\KlixNightAdviser\KlixNightAdviser\Properties\Default.rd.xml">
+    <AppxPackagedFile Include="F:\OOAD\Projekat\KlixNightAdviser\KlixNightAdviser\Properties\Default.rd.xml">
       <PackagePath>Properties\Default.rd.xml</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\PC\.nuget\packages\EntityFramework.Commands\7.0.0-beta6\lib\net45\EntityFramework.Commands.xml">
       <PackagePath>EntityFramework.Commands.xml</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\PC\Desktop\SRANJE\Projekat\KlixNightAdviser\KlixNightAdviser\Assets\LockScreenLogo.scale-200.png">
+    <AppxPackagedFile Include="F:\OOAD\Projekat\KlixNightAdviser\KlixNightAdviser\Assets\LockScreenLogo.scale-200.png">
       <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\PC\Desktop\SRANJE\Projekat\KlixNightAdviser\KlixNightAdviser\Assets\SplashScreen.scale-200.png">
+    <AppxPackagedFile Include="F:\OOAD\Projekat\KlixNightAdviser\KlixNightAdviser\Assets\SplashScreen.scale-200.png">
       <PackagePath>Assets\SplashScreen.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\PC\Desktop\SRANJE\Projekat\KlixNightAdviser\KlixNightAdviser\Assets\Square150x150Logo.scale-200.png">
+    <AppxPackagedFile Include="F:\OOAD\Projekat\KlixNightAdviser\KlixNightAdviser\Assets\Square150x150Logo.scale-200.png">
       <PackagePath>Assets\Square150x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\PC\Desktop\SRANJE\Projekat\KlixNightAdviser\KlixNightAdviser\Assets\Square44x44Logo.scale-200.png">
+    <AppxPackagedFile Include="F:\OOAD\Projekat\KlixNightAdviser\KlixNightAdviser\Assets\Square44x44Logo.scale-200.png">
       <PackagePath>Assets\Square44x44Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\PC\Desktop\SRANJE\Projekat\KlixNightAdviser\KlixNightAdviser\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
+    <AppxPackagedFile Include="F:\OOAD\Projekat\KlixNightAdviser\KlixNightAdviser\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
       <PackagePath>Assets\Square44x44Logo.targetsize-24_altform-unplated.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\PC\Desktop\SRANJE\Projekat\KlixNightAdviser\KlixNightAdviser\Assets\StoreLogo.png">
+    <AppxPackagedFile Include="F:\OOAD\Projekat\KlixNightAdviser\KlixNightAdviser\Assets\StoreLogo.png">
       <PackagePath>Assets\StoreLogo.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\PC\Desktop\SRANJE\Projekat\KlixNightAdviser\KlixNightAdviser\Assets\Wide310x150Logo.scale-200.png">
+    <AppxPackagedFile Include="F:\OOAD\Projekat\KlixNightAdviser\KlixNightAdviser\Assets\Wide310x150Logo.scale-200.png">
       <PackagePath>Assets\Wide310x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\PC\.nuget\packages\EntityFramework.Commands\7.0.0-beta6\lib\net45\EntityFramework.Commands.dll">
       <PackagePath>EntityFramework.Commands.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\PC\Desktop\SRANJE\Projekat\KlixNightAdviser\KlixNightAdviser\bin\x86\Debug\KlixNightAdviser.xr.xml">
+    <AppxPackagedFile Include="F:\OOAD\Projekat\KlixNightAdviser\KlixNightAdviser\bin\x86\Debug\KlixNightAdviser.xr.xml">
       <PackagePath>KlixNightAdviser.xr.xml</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\PC\Desktop\SRANJE\Projekat\KlixNightAdviser\KlixNightAdviser\bin\x86\Debug\resources.pri">
+    <AppxPackagedFile Include="F:\OOAD\Projekat\KlixNightAdviser\KlixNightAdviser\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\PC\Desktop\SRANJE\Projekat\KlixNightAdviser\KlixNightAdviser\bin\x86\Debug\Core\KlixNightAdviser.exe">
+    <AppxPackagedFile Include="F:\OOAD\Projekat\KlixNightAdviser\KlixNightAdviser\bin\x86\Debug\Core\KlixNightAdviser.exe">
       <PackagePath>KlixNightAdviser.exe</PackagePath>
     </AppxPackagedFile>
   </ItemGroup>
