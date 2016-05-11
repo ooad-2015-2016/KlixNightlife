@@ -7,15 +7,11 @@ using System.Threading.Tasks;
 
 namespace KlixNightAdviser.AdviserBaza.Model
 {
-    public class Komentar
+    public class Galerija
     {
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int Id { get; set; }
-        public int KorisnikId { get; set; }
-        public Korisnik Korisnik { get; set; }
-        public string TekstKomentara { get; set; }
-        public int ObjekatId { get; set; }
-        public Objekat Objekat { get; set; }
+        ICollection<byte[]> Slike { get; set; }
         public int ClanakId { get; set; }
         public Clanak Clanak { get; set; }
     }

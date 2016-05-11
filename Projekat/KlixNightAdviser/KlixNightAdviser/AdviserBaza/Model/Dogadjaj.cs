@@ -1,14 +1,16 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace KlixNightAdviser.AdviserBaza.Model
 {
-    class Dogadjaj
+    public class Dogadjaj
     {
-        public int DogadjajId { get; set; }
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
+        public int Id { get; set; }
         public string Naziv { get; set; }
         public DateTime Datum { get; set; }
         public DateTime Vrijeme { get; set; }

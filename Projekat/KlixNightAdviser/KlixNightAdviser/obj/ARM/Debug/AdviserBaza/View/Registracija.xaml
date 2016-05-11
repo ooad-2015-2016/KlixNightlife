@@ -1,0 +1,50 @@
+﻿<Page
+    x:Class="KlixNightAdviser.Registracija"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:KlixNightAdviser"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" AllowDrop="True">
+        <TextBox x:ConnectionId='1' x:Name="textBox" HorizontalAlignment="Left" Margin="26,20.626,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="139.676" RenderTransformOrigin="0.638,0.271" UseLayoutRounding="False" d:LayoutRounding="Auto" PlaceholderText="Korisnicko ime">
+            <TextBox.RenderTransform>
+                <CompositeTransform Rotation="0.076" TranslateX="0.132" TranslateY="0.111"/>
+            </TextBox.RenderTransform>
+        </TextBox>
+        <TextBox x:ConnectionId='2' x:Name="textBox1" HorizontalAlignment="Left" Margin="26,57.634,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="139.676" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto" PlaceholderText="Lozinka">
+            <TextBox.RenderTransform>
+                <CompositeTransform Rotation="0.076" TranslateX="0.074" TranslateY="0.077"/>
+            </TextBox.RenderTransform>
+        </TextBox>
+        <TextBox x:ConnectionId='3' x:Name="textBox2" HorizontalAlignment="Left" Margin="186,58.634,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="139.676" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto" PlaceholderText="eMail">
+            <TextBox.RenderTransform>
+                <CompositeTransform Rotation="0.076" TranslateX="0.024" TranslateY="0.077"/>
+            </TextBox.RenderTransform>
+        </TextBox>
+        <TextBox x:ConnectionId='4' x:Name="textBox3" HorizontalAlignment="Left" Margin="186,100.3,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="139.676" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto" PlaceholderText="Broj telefona">
+            <TextBox.RenderTransform>
+                <CompositeTransform Rotation="0.076" TranslateX="-0.123" TranslateY="0.077"/>
+            </TextBox.RenderTransform>
+        </TextBox>
+        <TextBox x:ConnectionId='5' x:Name="textBox4" HorizontalAlignment="Left" Margin="184,21.967,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="139.676" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto" PlaceholderText="Ime i Prezime">
+            <TextBox.RenderTransform>
+                <CompositeTransform Rotation="0.076" TranslateX="-0.074" TranslateY="0.077"/>
+            </TextBox.RenderTransform>
+        </TextBox>
+        <TextBox x:ConnectionId='6' x:Name="textBox5" HorizontalAlignment="Left" Margin="26,98.301,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="141.662" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto" PlaceholderText="Adresa">
+            <TextBox.RenderTransform>
+                <CompositeTransform Rotation="0.076" TranslateX="-0.025" TranslateY="0.077"/>
+            </TextBox.RenderTransform>
+        </TextBox>
+        <ComboBox x:ConnectionId='7' x:Name="comboBox" HorizontalAlignment="Left" Margin="27,145,0,0" VerticalAlignment="Top" Width="137" PlaceholderText="Spol">
+            <ComboBoxItem Content="zenski"/>
+            <ComboBoxItem Content="muski"/>
+        </ComboBox>
+        <Button x:ConnectionId='8' x:Name="button" Content="Done" HorizontalAlignment="Left" Margin="166,552,0,0" VerticalAlignment="Top" Width="157"                     />
+        <DatePicker HorizontalAlignment="Left" Margin="27,182,0,0" VerticalAlignment="Top" Height="44" MonthFormat="{}{month.integer}" DayFormat="{}{day.integer}"/>
+
+    </Grid>
+</Page>
+

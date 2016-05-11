@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace KlixNightAdviser.AdviserBaza.Model
 {
-    class Vlasnik : Gost
+    public class Vlasnik
     {
         public int VlasnikId { get; set; }
         public string Ime { get; set; }
@@ -14,6 +14,6 @@ namespace KlixNightAdviser.AdviserBaza.Model
         public string KorisnickoIme { get; set; }
         public string EMail { get; set; }
         public Spol Spol { get; set; }
-        
+        public ICollection<Objekat> Objekti { get; set; }
     }
 }

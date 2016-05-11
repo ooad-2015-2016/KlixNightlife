@@ -99,7 +99,9 @@
     <Compile Include="AdviserBaza\ModelView\VlasnikModelView.cs" />
     <Compile Include="AdviserBaza\Model\AdviserDBContext.cs" />
     <Compile Include="AdviserBaza\Model\Clanak.cs" />
+    <Compile Include="AdviserBaza\Model\DefaultPodaci.cs" />
     <Compile Include="AdviserBaza\Model\Dogadjaj.cs" />
+    <Compile Include="AdviserBaza\Model\Galerija.cs" />
     <Compile Include="AdviserBaza\Model\Komentar.cs" />
     <Compile Include="AdviserBaza\Model\Korisnik.cs" />
     <Compile Include="AdviserBaza\Model\Objekat.cs" />
@@ -110,21 +112,17 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
-    <Compile Include="DefaultPodaci.cs" />
-    <Compile Include="Gost.cs" />
-    <Compile Include="Komentar.cs" />
     <Compile Include="AdviserBaza\View\Login.xaml.cs">
       <DependentUpon>Login.xaml</DependentUpon>
     </Compile>
     <Compile Include="AdviserBaza\View\MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\20160506143237_InitialMigration.cs" />
-    <Compile Include="Migrations\20160506143237_InitialMigration.designer.cs">
-      <DependentUpon>20160506143237_InitialMigration.cs</DependentUpon>
+    <Compile Include="Migrations\20160511185829_migracija.cs" />
+    <Compile Include="Migrations\20160511185829_migracija.designer.cs">
+      <DependentUpon>20160511185829_migracija.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\AdviserDBContextModelSnapshot.cs" />
-    <Compile Include="Ocjena.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="AdviserBaza\View\Registracija.xaml.cs">
       <DependentUpon>Registracija.xaml</DependentUpon>

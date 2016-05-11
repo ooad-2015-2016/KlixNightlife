@@ -7,9 +7,19 @@ using KlixNightAdviser.AdviserBaza.Model;
 namespace KlixNightAdviserMigrations
 {
     [ContextType(typeof(AdviserDBContext))]
-    partial class AdviserDBContextModelSnapshot : ModelSnapshot
+    partial class migracija
     {
-        public override void BuildModel(ModelBuilder builder)
+        public override string Id
+        {
+            get { return "20160511185829_migracija"; }
+        }
+
+        public override string ProductVersion
+        {
+            get { return "7.0.0-beta6-13815"; }
+        }
+
+        public override void BuildTargetModel(ModelBuilder builder)
         {
             builder
                 .Annotation("ProductVersion", "7.0.0-beta6-13815");

@@ -40,9 +40,7 @@ namespace KlixNightAdviser
             using (var db = new AdviserDBContext())
             {
                 db.Database.ApplyMigrations();
-                //DefaultPodaci.Initialize(db);
-                //Krahira nakon ovoga izgleda http://prntscr.com/b107y4
-                //ugl ne kreira bazu 
+                DefaultPodaci.Initialize(db);
             }
 
         }
