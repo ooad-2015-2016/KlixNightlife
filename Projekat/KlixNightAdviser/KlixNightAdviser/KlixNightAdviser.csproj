@@ -118,9 +118,9 @@
     <Compile Include="AdviserBaza\View\MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\20160511185829_migracija.cs" />
-    <Compile Include="Migrations\20160511185829_migracija.designer.cs">
-      <DependentUpon>20160511185829_migracija.cs</DependentUpon>
+    <Compile Include="Migrations\20160513095905_Migracija.cs" />
+    <Compile Include="Migrations\20160513095905_Migracija.designer.cs">
+      <DependentUpon>20160513095905_Migracija.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\AdviserDBContextModelSnapshot.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

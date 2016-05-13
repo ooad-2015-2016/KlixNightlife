@@ -7,11 +7,11 @@ using KlixNightAdviser.AdviserBaza.Model;
 namespace KlixNightAdviserMigrations
 {
     [ContextType(typeof(AdviserDBContext))]
-    partial class migracija
+    partial class Migracija
     {
         public override string Id
         {
-            get { return "20160511185829_migracija"; }
+            get { return "20160513095905_Migracija"; }
         }
 
         public override string ProductVersion
@@ -103,6 +103,8 @@ namespace KlixNightAdviserMigrations
 
                     b.Property<string>("KorisnickoIme");
 
+                    b.Property<string>("Sifra");
+
                     b.Property<int>("Spol");
 
                     b.Key("Id");
@@ -142,6 +144,8 @@ namespace KlixNightAdviserMigrations
                     b.Property<string>("Ime");
 
                     b.Property<string>("KorisnickoIme");
+
+                    b.Property<string>("Sifra");
 
                     b.Property<int>("Spol");
 

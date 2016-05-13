@@ -9,13 +9,14 @@ namespace KlixNightAdviser.AdviserBaza.ModelView
 {
     class VlasnikModelView
     {
-        public void DodajVlasnika(string ime, string adresa, string brojt, string korisnickoIme, string email, Spol s)
+        public void DodajVlasnika(string ime, string adresa, string brojt, string korisnickoIme, string email, Spol s, string sifra)
         {
             Vlasnik noviVlasnik = new Vlasnik();
             noviVlasnik.Ime = ime;
             noviVlasnik.KorisnickoIme = korisnickoIme;
             noviVlasnik.EMail = email;
             noviVlasnik.Spol = s;
+            noviVlasnik.Sifra = sifra;
 
             //Dodati još parametara
             bool provjera = DodajVlasnikaUBazu(noviVlasnik);
@@ -39,6 +40,12 @@ namespace KlixNightAdviser.AdviserBaza.ModelView
             //dodaš sad
             //i ako je uspjesno, vrati true, ako ne false
             //za sad predpostavimo da je true
+
+            var context = new AdviserDBContext();
+            
+            context.Vlasnici.AddRange(vlasnik);
+            context.SaveChanges();
+
             return true;
         }
     }

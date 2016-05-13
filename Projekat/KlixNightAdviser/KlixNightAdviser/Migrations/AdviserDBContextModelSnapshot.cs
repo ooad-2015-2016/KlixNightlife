@@ -93,6 +93,8 @@ namespace KlixNightAdviserMigrations
 
                     b.Property<string>("KorisnickoIme");
 
+                    b.Property<string>("Sifra");
+
                     b.Property<int>("Spol");
 
                     b.Key("Id");
@@ -132,6 +134,8 @@ namespace KlixNightAdviserMigrations
                     b.Property<string>("Ime");
 
                     b.Property<string>("KorisnickoIme");
+
+                    b.Property<string>("Sifra");
 
                     b.Property<int>("Spol");
 

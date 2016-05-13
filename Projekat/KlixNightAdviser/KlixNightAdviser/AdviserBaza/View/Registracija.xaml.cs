@@ -54,7 +54,7 @@ namespace KlixNightAdviser
             {
                 
                 KorisnikModelView dodavanjeKorisnika = new KorisnikModelView();
-                dodavanjeKorisnika.DodajKorisnika(textBox4.Text, textBox5.Text, textBox3.Text, textBox.Text, textBox2.Text, s);
+                dodavanjeKorisnika.DodajKorisnika(textBox4.Text, textBox5.Text, textBox3.Text, textBox.Text, textBox2.Text, s, textBox1.Text);
                 OcistiPolja();
                  
                 //NERA: i dodati korisnika u bazu
@@ -63,7 +63,7 @@ namespace KlixNightAdviser
             else if (obj.tip=="vlasnik")
             {
                 VlasnikModelView dodavanjeVlasnika = new VlasnikModelView();
-                dodavanjeVlasnika.DodajVlasnika(textBox4.Text, textBox5.Text, textBox3.Text, textBox.Text, textBox2.Text, s);
+                dodavanjeVlasnika.DodajVlasnika(textBox4.Text, textBox5.Text, textBox3.Text, textBox.Text, textBox2.Text, s, textBox1.Text);
                 OcistiPolja();
 
             }

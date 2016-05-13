@@ -5,7 +5,7 @@ using Microsoft.Data.Entity.Migrations.Operations;
 
 namespace KlixNightAdviserMigrations
 {
-    public partial class migracija : Migration
+    public partial class Migracija : Migration
     {
         public override void Up(MigrationBuilder migration)
         {
@@ -53,6 +53,7 @@ namespace KlixNightAdviserMigrations
                     EMail = table.Column(type: "TEXT", nullable: true),
                     Ime = table.Column(type: "TEXT", nullable: true),
                     KorisnickoIme = table.Column(type: "TEXT", nullable: true),
+                    Sifra = table.Column(type: "TEXT", nullable: true),
                     Spol = table.Column(type: "INTEGER", nullable: false)
                 },
                 constraints: table =>
@@ -69,6 +70,7 @@ namespace KlixNightAdviserMigrations
                     EMail = table.Column(type: "TEXT", nullable: true),
                     Ime = table.Column(type: "TEXT", nullable: true),
                     KorisnickoIme = table.Column(type: "TEXT", nullable: true),
+                    Sifra = table.Column(type: "TEXT", nullable: true),
                     Spol = table.Column(type: "INTEGER", nullable: false)
                 },
                 constraints: table =>

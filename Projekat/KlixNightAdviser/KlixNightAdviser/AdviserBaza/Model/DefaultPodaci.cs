@@ -11,18 +11,19 @@ namespace KlixNightAdviser
     {
         public static void Initialize(AdviserDBContext context)
         {
-
             var korisnik = new Korisnik {
                 Ime = "Elza Kalac",
                 Adresa = "Dragana Kulidžana",
                 BrojTelefona = "066020564",
                 KorisnickoIme = "ekalac1",
                 EMail = "elzaa_95@hotmail.com",
-                Spol = Spol.Zensko
+                Spol = Spol.Zensko,
+                Sifra = "sifra"
             };
             var vlasnik = new Vlasnik {
                 Ime = "Alem Luckin",
-                Spol = Spol.Musko
+                Spol = Spol.Musko,
+                Sifra = "sifra"
             };
             var objekat = new Objekat {
                 Naziv = "Devetka",

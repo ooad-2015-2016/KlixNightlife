@@ -9,7 +9,7 @@ namespace KlixNightAdviser.AdviserBaza.ModelView
 {
     class KorisnikModelView
     {
-        public void DodajKorisnika(string ime, string adresa, string brojt, string korisnickoIme, string email, Spol s)
+        public void DodajKorisnika(string ime, string adresa, string brojt, string korisnickoIme, string email, Spol s, string sifra)
         {
             Korisnik noviKorisnik = new Korisnik();
             noviKorisnik.Ime = ime;
@@ -18,6 +18,29 @@ namespace KlixNightAdviser.AdviserBaza.ModelView
             noviKorisnik.KorisnickoIme = korisnickoIme;
             noviKorisnik.Spol = s;
             noviKorisnik.DatumRegistracije = DateTime.Now;
+            noviKorisnik.Sifra = sifra;
+
+            var provjeriUnosKorisnika = DodajKorisnikaUBazu(noviKorisnik);
+
+            if (provjeriUnosKorisnika)
+            {
+                // 
+            }
+            else
+            {
+                //
+            }
+           
+        }
+
+        private bool DodajKorisnikaUBazu(Korisnik korisnik)
+        {
+            var context = new AdviserDBContext();
+
+            context.AddRange(korisnik);
+            context.SaveChanges();
+
+            return true; 
         }
     }
 }
