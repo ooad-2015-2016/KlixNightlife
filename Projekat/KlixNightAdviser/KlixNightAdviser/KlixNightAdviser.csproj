@@ -109,6 +109,9 @@
     <Compile Include="AdviserBaza\Model\TipDogađaja.cs" />
     <Compile Include="AdviserBaza\Model\TipObjekta.cs" />
     <Compile Include="AdviserBaza\Model\Vlasnik.cs" />
+    <Compile Include="AdviserBaza\View\DodavanjeObjekta.xaml.cs">
+      <DependentUpon>DodavanjeObjekta.xaml</DependentUpon>
+    </Compile>
     <Compile Include="AdviserBaza\View\PregledVlasnika.xaml.cs">
       <DependentUpon>PregledVlasnika.xaml</DependentUpon>
     </Compile>
@@ -152,6 +155,10 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Page Include="AdviserBaza\View\DodavanjeObjekta.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="AdviserBaza\View\Login.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>

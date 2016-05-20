@@ -27,7 +27,21 @@ namespace KlixNightAdviser.AdviserBaza.View
             this.InitializeComponent();
             var obj = App.Current as App;
             textBlock.Text = "Dobrodošli " + obj.aktivanVlasnik.Ime;
-            listView.ItemsSource = obj.aktivanVlasnik.Objekti;
+            listBox.ItemsSource = obj.aktivanVlasnik.Objekti;
+        }
+
+        private void listBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            //sad su ovdje objekti
+            //i kad se pritisne na neki
+            //onda se otvara forma koja prikazuje podatke o tom objektu, i može se mjenjati, ili obrisati
+            //al to kad malo popunim bazu i dodam objekata
+            // pa da se može vidjeti da li radi
+        }
+
+        private void button_Click(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(DodavanjeObjekta));
         }
     }
 }

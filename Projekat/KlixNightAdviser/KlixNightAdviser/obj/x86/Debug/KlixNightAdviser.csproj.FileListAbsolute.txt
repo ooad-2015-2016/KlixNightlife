@@ -1187,3 +1187,8 @@ F:\OOAD\Projekat\KlixNightAdviser\KlixNightAdviser\obj\x86\Debug\AdviserBaza\Vie
 F:\OOAD\Projekat\KlixNightAdviser\KlixNightAdviser\obj\x86\Debug\AdviserBaza\View\PregledVlasnika.xaml
 F:\OOAD\Projekat\KlixNightAdviser\KlixNightAdviser\obj\x86\Debug\AdviserBaza\View\PregledVlasnika.xbf
 F:\OOAD\Projekat\KlixNightAdviser\KlixNightAdviser\bin\x86\Debug\AdviserBaza\View\PregledVlasnika.xbf
+F:\OOAD\Projekat\KlixNightAdviser\KlixNightAdviser\bin\x86\Debug\AdviserBaza\View\DodavanjeObjekta.xbf
+F:\OOAD\Projekat\KlixNightAdviser\KlixNightAdviser\obj\x86\Debug\AdviserBaza\View\DodavanjeObjekta.g.i.cs
+F:\OOAD\Projekat\KlixNightAdviser\KlixNightAdviser\obj\x86\Debug\AdviserBaza\View\DodavanjeObjekta.g.cs
+F:\OOAD\Projekat\KlixNightAdviser\KlixNightAdviser\obj\x86\Debug\AdviserBaza\View\DodavanjeObjekta.xaml
+F:\OOAD\Projekat\KlixNightAdviser\KlixNightAdviser\obj\x86\Debug\AdviserBaza\View\DodavanjeObjekta.xbf

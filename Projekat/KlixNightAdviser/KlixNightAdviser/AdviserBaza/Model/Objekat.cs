@@ -23,5 +23,6 @@ namespace KlixNightAdviser.AdviserBaza.Model
         public Galerija Galerija { get; set; }
         public int DogadjajId { get; set; }
         public Dogadjaj Dogadjaj { get; set; }
+        //ovdje treba biti lista događaja, popravi to :)
     }
 }

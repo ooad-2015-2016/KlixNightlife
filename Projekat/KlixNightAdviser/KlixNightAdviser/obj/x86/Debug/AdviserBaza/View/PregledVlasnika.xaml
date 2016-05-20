@@ -8,18 +8,10 @@
     x:Class="KlixNightAdviser.AdviserBaza.View.PregledVlasnika"
     mc:Ignorable="d">
 
-    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" RenderTransformOrigin="0.063,0.435">
-        <ListView x:ConnectionId='1' x:Name="listView" HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="100"/>
-        <ListView x:ConnectionId='2' x:Name="listView1" HorizontalAlignment="Left" Height="319" Margin="10,191,0,0" VerticalAlignment="Top" Width="259">
-            <Model:Objekat/>
-            <Model:Objekat/>
-            <Model:Objekat/>
-            <Model:Objekat/>
-            <Model:Objekat/>
-            <Model:Objekat/>
-            <Model:Objekat/>
-        </ListView>
-        <TextBlock x:ConnectionId='3' x:Name="textBlock" HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="Wrap" Text="Dobrodošli" VerticalAlignment="Top"/>
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" RenderTransformOrigin="0.067,0.408">
+        <TextBlock x:ConnectionId='1' x:Name="textBlock" HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="Wrap" Text="Dobrodošli" VerticalAlignment="Top"/>
+        <Button x:ConnectionId='2' x:Name="button" Content="Dodaj novi objekat" HorizontalAlignment="Left" Margin="10,105,0,0" VerticalAlignment="Top"                     />
+        <ListBox x:ConnectionId='3' x:Name="listBox" HorizontalAlignment="Left" Height="228" VerticalAlignment="Top" Width="276" Margin="10,239,0,0"                                            />
 
     </Grid>
 </Page>
