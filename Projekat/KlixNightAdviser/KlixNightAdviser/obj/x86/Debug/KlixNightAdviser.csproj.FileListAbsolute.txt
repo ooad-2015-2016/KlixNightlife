@@ -1182,3 +1182,8 @@ C:\KlixNightlife\Projekat\KlixNightAdviser\KlixNightAdviser\obj\x86\Debug\qualif
 C:\KlixNightlife\Projekat\KlixNightAdviser\KlixNightAdviser\obj\x86\Debug\qualifiers.txt.intermediate
 C:\KlixNightlife\Projekat\KlixNightAdviser\KlixNightAdviser\obj\x86\Debug\MultipleQualifiersPerDimensionFound.txt
 C:\KlixNightlife\Projekat\KlixNightAdviser\KlixNightAdviser\obj\x86\Debug\ProjectArchitectures.txt
+F:\OOAD\Projekat\KlixNightAdviser\KlixNightAdviser\obj\x86\Debug\AdviserBaza\View\PregledVlasnika.g.i.cs
+F:\OOAD\Projekat\KlixNightAdviser\KlixNightAdviser\obj\x86\Debug\AdviserBaza\View\PregledVlasnika.g.cs
+F:\OOAD\Projekat\KlixNightAdviser\KlixNightAdviser\obj\x86\Debug\AdviserBaza\View\PregledVlasnika.xaml
+F:\OOAD\Projekat\KlixNightAdviser\KlixNightAdviser\obj\x86\Debug\AdviserBaza\View\PregledVlasnika.xbf
+F:\OOAD\Projekat\KlixNightAdviser\KlixNightAdviser\bin\x86\Debug\AdviserBaza\View\PregledVlasnika.xbf

@@ -132,19 +132,51 @@ namespace KlixNightAdviser.KlixNightAdviser_XamlTypeInfo
 
         private void InitTypeTables()
         {
-            _typeNameTable = new string[5];
+            _typeNameTable = new string[21];
             _typeNameTable[0] = "KlixNightAdviser.Login";
             _typeNameTable[1] = "Windows.UI.Xaml.Controls.Page";
             _typeNameTable[2] = "Windows.UI.Xaml.Controls.UserControl";
             _typeNameTable[3] = "KlixNightAdviser.MainPage";
-            _typeNameTable[4] = "KlixNightAdviser.Registracija";
+            _typeNameTable[4] = "KlixNightAdviser.AdviserBaza.Model.Objekat";
+            _typeNameTable[5] = "Object";
+            _typeNameTable[6] = "Int32";
+            _typeNameTable[7] = "String";
+            _typeNameTable[8] = "KlixNightAdviser.AdviserBaza.Model.TipObjekta";
+            _typeNameTable[9] = "System.Enum";
+            _typeNameTable[10] = "System.ValueType";
+            _typeNameTable[11] = "System.Collections.Generic.ICollection`1<Int32>";
+            _typeNameTable[12] = "System.Collections.Generic.ICollection`1<KlixNightAdviser.AdviserBaza.Model.Komentar>";
+            _typeNameTable[13] = "KlixNightAdviser.AdviserBaza.Model.Komentar";
+            _typeNameTable[14] = "KlixNightAdviser.AdviserBaza.Model.Korisnik";
+            _typeNameTable[15] = "KlixNightAdviser.AdviserBaza.Model.Clanak";
+            _typeNameTable[16] = "KlixNightAdviser.AdviserBaza.Model.Vlasnik";
+            _typeNameTable[17] = "KlixNightAdviser.AdviserBaza.Model.Galerija";
+            _typeNameTable[18] = "KlixNightAdviser.AdviserBaza.Model.Dogadjaj";
+            _typeNameTable[19] = "KlixNightAdviser.AdviserBaza.View.PregledVlasnika";
+            _typeNameTable[20] = "KlixNightAdviser.Registracija";
 
-            _typeTable = new global::System.Type[5];
+            _typeTable = new global::System.Type[21];
             _typeTable[0] = typeof(global::KlixNightAdviser.Login);
             _typeTable[1] = typeof(global::Windows.UI.Xaml.Controls.Page);
             _typeTable[2] = typeof(global::Windows.UI.Xaml.Controls.UserControl);
             _typeTable[3] = typeof(global::KlixNightAdviser.MainPage);
-            _typeTable[4] = typeof(global::KlixNightAdviser.Registracija);
+            _typeTable[4] = typeof(global::KlixNightAdviser.AdviserBaza.Model.Objekat);
+            _typeTable[5] = typeof(global::System.Object);
+            _typeTable[6] = typeof(global::System.Int32);
+            _typeTable[7] = typeof(global::System.String);
+            _typeTable[8] = typeof(global::KlixNightAdviser.AdviserBaza.Model.TipObjekta);
+            _typeTable[9] = typeof(global::System.Enum);
+            _typeTable[10] = typeof(global::System.ValueType);
+            _typeTable[11] = typeof(global::System.Collections.Generic.ICollection<global::System.Int32>);
+            _typeTable[12] = typeof(global::System.Collections.Generic.ICollection<global::KlixNightAdviser.AdviserBaza.Model.Komentar>);
+            _typeTable[13] = typeof(global::KlixNightAdviser.AdviserBaza.Model.Komentar);
+            _typeTable[14] = typeof(global::KlixNightAdviser.AdviserBaza.Model.Korisnik);
+            _typeTable[15] = typeof(global::KlixNightAdviser.AdviserBaza.Model.Clanak);
+            _typeTable[16] = typeof(global::KlixNightAdviser.AdviserBaza.Model.Vlasnik);
+            _typeTable[17] = typeof(global::KlixNightAdviser.AdviserBaza.Model.Galerija);
+            _typeTable[18] = typeof(global::KlixNightAdviser.AdviserBaza.Model.Dogadjaj);
+            _typeTable[19] = typeof(global::KlixNightAdviser.AdviserBaza.View.PregledVlasnika);
+            _typeTable[20] = typeof(global::KlixNightAdviser.Registracija);
         }
 
         private int LookupTypeIndexByName(string typeName)
@@ -181,7 +213,27 @@ namespace KlixNightAdviser.KlixNightAdviser_XamlTypeInfo
 
         private object Activate_0_Login() { return new global::KlixNightAdviser.Login(); }
         private object Activate_3_MainPage() { return new global::KlixNightAdviser.MainPage(); }
-        private object Activate_4_Registracija() { return new global::KlixNightAdviser.Registracija(); }
+        private object Activate_4_Objekat() { return new global::KlixNightAdviser.AdviserBaza.Model.Objekat(); }
+        private object Activate_13_Komentar() { return new global::KlixNightAdviser.AdviserBaza.Model.Komentar(); }
+        private object Activate_14_Korisnik() { return new global::KlixNightAdviser.AdviserBaza.Model.Korisnik(); }
+        private object Activate_15_Clanak() { return new global::KlixNightAdviser.AdviserBaza.Model.Clanak(); }
+        private object Activate_16_Vlasnik() { return new global::KlixNightAdviser.AdviserBaza.Model.Vlasnik(); }
+        private object Activate_17_Galerija() { return new global::KlixNightAdviser.AdviserBaza.Model.Galerija(); }
+        private object Activate_18_Dogadjaj() { return new global::KlixNightAdviser.AdviserBaza.Model.Dogadjaj(); }
+        private object Activate_19_PregledVlasnika() { return new global::KlixNightAdviser.AdviserBaza.View.PregledVlasnika(); }
+        private object Activate_20_Registracija() { return new global::KlixNightAdviser.Registracija(); }
+        private void VectorAdd_11_ICollection(object instance, object item)
+        {
+            var collection = (global::System.Collections.Generic.ICollection<global::System.Int32>)instance;
+            var newItem = (global::System.Int32)item;
+            collection.Add(newItem);
+        }
+        private void VectorAdd_12_ICollection(object instance, object item)
+        {
+            var collection = (global::System.Collections.Generic.ICollection<global::KlixNightAdviser.AdviserBaza.Model.Komentar>)instance;
+            var newItem = (global::KlixNightAdviser.AdviserBaza.Model.Komentar)item;
+            collection.Add(newItem);
+        }
 
         private global::Windows.UI.Xaml.Markup.IXamlType CreateXamlType(int typeIndex)
         {
@@ -215,9 +267,136 @@ namespace KlixNightAdviser.KlixNightAdviser_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 4:   //  KlixNightAdviser.Registracija
+            case 4:   //  KlixNightAdviser.AdviserBaza.Model.Objekat
+                userType = new global::KlixNightAdviser.KlixNightAdviser_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
+                userType.Activator = Activate_4_Objekat;
+                userType.AddMemberName("Id");
+                userType.AddMemberName("Naziv");
+                userType.AddMemberName("Adresa");
+                userType.AddMemberName("Tip");
+                userType.AddMemberName("Ocjene");
+                userType.AddMemberName("Komentari");
+                userType.AddMemberName("VlasnikId");
+                userType.AddMemberName("Vlasnik");
+                userType.AddMemberName("Mjesto");
+                userType.AddMemberName("GalerijaId");
+                userType.AddMemberName("Galerija");
+                userType.AddMemberName("DogadjajId");
+                userType.AddMemberName("Dogadjaj");
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 5:   //  Object
+                xamlType = new global::KlixNightAdviser.KlixNightAdviser_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                break;
+
+            case 6:   //  Int32
+                xamlType = new global::KlixNightAdviser.KlixNightAdviser_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                break;
+
+            case 7:   //  String
+                xamlType = new global::KlixNightAdviser.KlixNightAdviser_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                break;
+
+            case 8:   //  KlixNightAdviser.AdviserBaza.Model.TipObjekta
+                userType = new global::KlixNightAdviser.KlixNightAdviser_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Enum"));
+                userType.AddEnumValue("Restoran", global::KlixNightAdviser.AdviserBaza.Model.TipObjekta.Restoran);
+                userType.AddEnumValue("CaffeBar", global::KlixNightAdviser.AdviserBaza.Model.TipObjekta.CaffeBar);
+                userType.AddEnumValue("Bistro", global::KlixNightAdviser.AdviserBaza.Model.TipObjekta.Bistro);
+                userType.AddEnumValue("Kafana", global::KlixNightAdviser.AdviserBaza.Model.TipObjekta.Kafana);
+                userType.AddEnumValue("Klub", global::KlixNightAdviser.AdviserBaza.Model.TipObjekta.Klub);
+                userType.AddEnumValue("Pub", global::KlixNightAdviser.AdviserBaza.Model.TipObjekta.Pub);
+                userType.AddEnumValue("Disco", global::KlixNightAdviser.AdviserBaza.Model.TipObjekta.Disco);
+                userType.AddEnumValue("Nargilhana", global::KlixNightAdviser.AdviserBaza.Model.TipObjekta.Nargilhana);
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 9:   //  System.Enum
+                userType = new global::KlixNightAdviser.KlixNightAdviser_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.ValueType"));
+                xamlType = userType;
+                break;
+
+            case 10:   //  System.ValueType
+                userType = new global::KlixNightAdviser.KlixNightAdviser_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
+                xamlType = userType;
+                break;
+
+            case 11:   //  System.Collections.Generic.ICollection`1<Int32>
+                userType = new global::KlixNightAdviser.KlixNightAdviser_XamlTypeInfo.XamlUserType(this, typeName, type, null);
+                userType.CollectionAdd = VectorAdd_11_ICollection;
+                userType.SetIsReturnTypeStub();
+                xamlType = userType;
+                break;
+
+            case 12:   //  System.Collections.Generic.ICollection`1<KlixNightAdviser.AdviserBaza.Model.Komentar>
+                userType = new global::KlixNightAdviser.KlixNightAdviser_XamlTypeInfo.XamlUserType(this, typeName, type, null);
+                userType.CollectionAdd = VectorAdd_12_ICollection;
+                userType.SetIsReturnTypeStub();
+                xamlType = userType;
+                break;
+
+            case 13:   //  KlixNightAdviser.AdviserBaza.Model.Komentar
+                userType = new global::KlixNightAdviser.KlixNightAdviser_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
+                userType.Activator = Activate_13_Komentar;
+                userType.AddMemberName("Id");
+                userType.AddMemberName("KorisnikId");
+                userType.AddMemberName("Korisnik");
+                userType.AddMemberName("TekstKomentara");
+                userType.AddMemberName("ObjekatId");
+                userType.AddMemberName("Objekat");
+                userType.AddMemberName("ClanakId");
+                userType.AddMemberName("Clanak");
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 14:   //  KlixNightAdviser.AdviserBaza.Model.Korisnik
+                userType = new global::KlixNightAdviser.KlixNightAdviser_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
+                userType.SetIsReturnTypeStub();
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 15:   //  KlixNightAdviser.AdviserBaza.Model.Clanak
+                userType = new global::KlixNightAdviser.KlixNightAdviser_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
+                userType.SetIsReturnTypeStub();
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 16:   //  KlixNightAdviser.AdviserBaza.Model.Vlasnik
+                userType = new global::KlixNightAdviser.KlixNightAdviser_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
+                userType.SetIsReturnTypeStub();
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 17:   //  KlixNightAdviser.AdviserBaza.Model.Galerija
+                userType = new global::KlixNightAdviser.KlixNightAdviser_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
+                userType.SetIsReturnTypeStub();
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 18:   //  KlixNightAdviser.AdviserBaza.Model.Dogadjaj
+                userType = new global::KlixNightAdviser.KlixNightAdviser_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
+                userType.SetIsReturnTypeStub();
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 19:   //  KlixNightAdviser.AdviserBaza.View.PregledVlasnika
                 userType = new global::KlixNightAdviser.KlixNightAdviser_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_4_Registracija;
+                userType.Activator = Activate_19_PregledVlasnika;
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 20:   //  KlixNightAdviser.Registracija
+                userType = new global::KlixNightAdviser.KlixNightAdviser_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_20_Registracija;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
@@ -226,11 +405,351 @@ namespace KlixNightAdviser.KlixNightAdviser_XamlTypeInfo
         }
 
 
+        private object get_0_Objekat_Id(object instance)
+        {
+            var that = (global::KlixNightAdviser.AdviserBaza.Model.Objekat)instance;
+            return that.Id;
+        }
+        private void set_0_Objekat_Id(object instance, object Value)
+        {
+            var that = (global::KlixNightAdviser.AdviserBaza.Model.Objekat)instance;
+            that.Id = (global::System.Int32)Value;
+        }
+        private object get_1_Objekat_Naziv(object instance)
+        {
+            var that = (global::KlixNightAdviser.AdviserBaza.Model.Objekat)instance;
+            return that.Naziv;
+        }
+        private void set_1_Objekat_Naziv(object instance, object Value)
+        {
+            var that = (global::KlixNightAdviser.AdviserBaza.Model.Objekat)instance;
+            that.Naziv = (global::System.String)Value;
+        }
+        private object get_2_Objekat_Adresa(object instance)
+        {
+            var that = (global::KlixNightAdviser.AdviserBaza.Model.Objekat)instance;
+            return that.Adresa;
+        }
+        private void set_2_Objekat_Adresa(object instance, object Value)
+        {
+            var that = (global::KlixNightAdviser.AdviserBaza.Model.Objekat)instance;
+            that.Adresa = (global::System.String)Value;
+        }
+        private object get_3_Objekat_Tip(object instance)
+        {
+            var that = (global::KlixNightAdviser.AdviserBaza.Model.Objekat)instance;
+            return that.Tip;
+        }
+        private void set_3_Objekat_Tip(object instance, object Value)
+        {
+            var that = (global::KlixNightAdviser.AdviserBaza.Model.Objekat)instance;
+            that.Tip = (global::KlixNightAdviser.AdviserBaza.Model.TipObjekta)Value;
+        }
+        private object get_4_Objekat_Ocjene(object instance)
+        {
+            var that = (global::KlixNightAdviser.AdviserBaza.Model.Objekat)instance;
+            return that.Ocjene;
+        }
+        private void set_4_Objekat_Ocjene(object instance, object Value)
+        {
+            var that = (global::KlixNightAdviser.AdviserBaza.Model.Objekat)instance;
+            that.Ocjene = (global::System.Collections.Generic.ICollection<global::System.Int32>)Value;
+        }
+        private object get_5_Objekat_Komentari(object instance)
+        {
+            var that = (global::KlixNightAdviser.AdviserBaza.Model.Objekat)instance;
+            return that.Komentari;
+        }
+        private void set_5_Objekat_Komentari(object instance, object Value)
+        {
+            var that = (global::KlixNightAdviser.AdviserBaza.Model.Objekat)instance;
+            that.Komentari = (global::System.Collections.Generic.ICollection<global::KlixNightAdviser.AdviserBaza.Model.Komentar>)Value;
+        }
+        private object get_6_Komentar_Id(object instance)
+        {
+            var that = (global::KlixNightAdviser.AdviserBaza.Model.Komentar)instance;
+            return that.Id;
+        }
+        private void set_6_Komentar_Id(object instance, object Value)
+        {
+            var that = (global::KlixNightAdviser.AdviserBaza.Model.Komentar)instance;
+            that.Id = (global::System.Int32)Value;
+        }
+        private object get_7_Komentar_KorisnikId(object instance)
+        {
+            var that = (global::KlixNightAdviser.AdviserBaza.Model.Komentar)instance;
+            return that.KorisnikId;
+        }
+        private void set_7_Komentar_KorisnikId(object instance, object Value)
+        {
+            var that = (global::KlixNightAdviser.AdviserBaza.Model.Komentar)instance;
+            that.KorisnikId = (global::System.Int32)Value;
+        }
+        private object get_8_Komentar_Korisnik(object instance)
+        {
+            var that = (global::KlixNightAdviser.AdviserBaza.Model.Komentar)instance;
+            return that.Korisnik;
+        }
+        private void set_8_Komentar_Korisnik(object instance, object Value)
+        {
+            var that = (global::KlixNightAdviser.AdviserBaza.Model.Komentar)instance;
+            that.Korisnik = (global::KlixNightAdviser.AdviserBaza.Model.Korisnik)Value;
+        }
+        private object get_9_Komentar_TekstKomentara(object instance)
+        {
+            var that = (global::KlixNightAdviser.AdviserBaza.Model.Komentar)instance;
+            return that.TekstKomentara;
+        }
+        private void set_9_Komentar_TekstKomentara(object instance, object Value)
+        {
+            var that = (global::KlixNightAdviser.AdviserBaza.Model.Komentar)instance;
+            that.TekstKomentara = (global::System.String)Value;
+        }
+        private object get_10_Komentar_ObjekatId(object instance)
+        {
+            var that = (global::KlixNightAdviser.AdviserBaza.Model.Komentar)instance;
+            return that.ObjekatId;
+        }
+        private void set_10_Komentar_ObjekatId(object instance, object Value)
+        {
+            var that = (global::KlixNightAdviser.AdviserBaza.Model.Komentar)instance;
+            that.ObjekatId = (global::System.Int32)Value;
+        }
+        private object get_11_Komentar_Objekat(object instance)
+        {
+            var that = (global::KlixNightAdviser.AdviserBaza.Model.Komentar)instance;
+            return that.Objekat;
+        }
+        private void set_11_Komentar_Objekat(object instance, object Value)
+        {
+            var that = (global::KlixNightAdviser.AdviserBaza.Model.Komentar)instance;
+            that.Objekat = (global::KlixNightAdviser.AdviserBaza.Model.Objekat)Value;
+        }
+        private object get_12_Komentar_ClanakId(object instance)
+        {
+            var that = (global::KlixNightAdviser.AdviserBaza.Model.Komentar)instance;
+            return that.ClanakId;
+        }
+        private void set_12_Komentar_ClanakId(object instance, object Value)
+        {
+            var that = (global::KlixNightAdviser.AdviserBaza.Model.Komentar)instance;
+            that.ClanakId = (global::System.Int32)Value;
+        }
+        private object get_13_Komentar_Clanak(object instance)
+        {
+            var that = (global::KlixNightAdviser.AdviserBaza.Model.Komentar)instance;
+            return that.Clanak;
+        }
+        private void set_13_Komentar_Clanak(object instance, object Value)
+        {
+            var that = (global::KlixNightAdviser.AdviserBaza.Model.Komentar)instance;
+            that.Clanak = (global::KlixNightAdviser.AdviserBaza.Model.Clanak)Value;
+        }
+        private object get_14_Objekat_VlasnikId(object instance)
+        {
+            var that = (global::KlixNightAdviser.AdviserBaza.Model.Objekat)instance;
+            return that.VlasnikId;
+        }
+        private void set_14_Objekat_VlasnikId(object instance, object Value)
+        {
+            var that = (global::KlixNightAdviser.AdviserBaza.Model.Objekat)instance;
+            that.VlasnikId = (global::System.Int32)Value;
+        }
+        private object get_15_Objekat_Vlasnik(object instance)
+        {
+            var that = (global::KlixNightAdviser.AdviserBaza.Model.Objekat)instance;
+            return that.Vlasnik;
+        }
+        private void set_15_Objekat_Vlasnik(object instance, object Value)
+        {
+            var that = (global::KlixNightAdviser.AdviserBaza.Model.Objekat)instance;
+            that.Vlasnik = (global::KlixNightAdviser.AdviserBaza.Model.Vlasnik)Value;
+        }
+        private object get_16_Objekat_Mjesto(object instance)
+        {
+            var that = (global::KlixNightAdviser.AdviserBaza.Model.Objekat)instance;
+            return that.Mjesto;
+        }
+        private void set_16_Objekat_Mjesto(object instance, object Value)
+        {
+            var that = (global::KlixNightAdviser.AdviserBaza.Model.Objekat)instance;
+            that.Mjesto = (global::System.String)Value;
+        }
+        private object get_17_Objekat_GalerijaId(object instance)
+        {
+            var that = (global::KlixNightAdviser.AdviserBaza.Model.Objekat)instance;
+            return that.GalerijaId;
+        }
+        private void set_17_Objekat_GalerijaId(object instance, object Value)
+        {
+            var that = (global::KlixNightAdviser.AdviserBaza.Model.Objekat)instance;
+            that.GalerijaId = (global::System.Int32)Value;
+        }
+        private object get_18_Objekat_Galerija(object instance)
+        {
+            var that = (global::KlixNightAdviser.AdviserBaza.Model.Objekat)instance;
+            return that.Galerija;
+        }
+        private void set_18_Objekat_Galerija(object instance, object Value)
+        {
+            var that = (global::KlixNightAdviser.AdviserBaza.Model.Objekat)instance;
+            that.Galerija = (global::KlixNightAdviser.AdviserBaza.Model.Galerija)Value;
+        }
+        private object get_19_Objekat_DogadjajId(object instance)
+        {
+            var that = (global::KlixNightAdviser.AdviserBaza.Model.Objekat)instance;
+            return that.DogadjajId;
+        }
+        private void set_19_Objekat_DogadjajId(object instance, object Value)
+        {
+            var that = (global::KlixNightAdviser.AdviserBaza.Model.Objekat)instance;
+            that.DogadjajId = (global::System.Int32)Value;
+        }
+        private object get_20_Objekat_Dogadjaj(object instance)
+        {
+            var that = (global::KlixNightAdviser.AdviserBaza.Model.Objekat)instance;
+            return that.Dogadjaj;
+        }
+        private void set_20_Objekat_Dogadjaj(object instance, object Value)
+        {
+            var that = (global::KlixNightAdviser.AdviserBaza.Model.Objekat)instance;
+            that.Dogadjaj = (global::KlixNightAdviser.AdviserBaza.Model.Dogadjaj)Value;
+        }
 
         private global::Windows.UI.Xaml.Markup.IXamlMember CreateXamlMember(string longMemberName)
         {
             global::KlixNightAdviser.KlixNightAdviser_XamlTypeInfo.XamlMember xamlMember = null;
-            // No Local Properties
+            global::KlixNightAdviser.KlixNightAdviser_XamlTypeInfo.XamlUserType userType;
+
+            switch (longMemberName)
+            {
+            case "KlixNightAdviser.AdviserBaza.Model.Objekat.Id":
+                userType = (global::KlixNightAdviser.KlixNightAdviser_XamlTypeInfo.XamlUserType)GetXamlTypeByName("KlixNightAdviser.AdviserBaza.Model.Objekat");
+                xamlMember = new global::KlixNightAdviser.KlixNightAdviser_XamlTypeInfo.XamlMember(this, "Id", "Int32");
+                xamlMember.Getter = get_0_Objekat_Id;
+                xamlMember.Setter = set_0_Objekat_Id;
+                break;
+            case "KlixNightAdviser.AdviserBaza.Model.Objekat.Naziv":
+                userType = (global::KlixNightAdviser.KlixNightAdviser_XamlTypeInfo.XamlUserType)GetXamlTypeByName("KlixNightAdviser.AdviserBaza.Model.Objekat");
+                xamlMember = new global::KlixNightAdviser.KlixNightAdviser_XamlTypeInfo.XamlMember(this, "Naziv", "String");
+                xamlMember.Getter = get_1_Objekat_Naziv;
+                xamlMember.Setter = set_1_Objekat_Naziv;
+                break;
+            case "KlixNightAdviser.AdviserBaza.Model.Objekat.Adresa":
+                userType = (global::KlixNightAdviser.KlixNightAdviser_XamlTypeInfo.XamlUserType)GetXamlTypeByName("KlixNightAdviser.AdviserBaza.Model.Objekat");
+                xamlMember = new global::KlixNightAdviser.KlixNightAdviser_XamlTypeInfo.XamlMember(this, "Adresa", "String");
+                xamlMember.Getter = get_2_Objekat_Adresa;
+                xamlMember.Setter = set_2_Objekat_Adresa;
+                break;
+            case "KlixNightAdviser.AdviserBaza.Model.Objekat.Tip":
+                userType = (global::KlixNightAdviser.KlixNightAdviser_XamlTypeInfo.XamlUserType)GetXamlTypeByName("KlixNightAdviser.AdviserBaza.Model.Objekat");
+                xamlMember = new global::KlixNightAdviser.KlixNightAdviser_XamlTypeInfo.XamlMember(this, "Tip", "KlixNightAdviser.AdviserBaza.Model.TipObjekta");
+                xamlMember.Getter = get_3_Objekat_Tip;
+                xamlMember.Setter = set_3_Objekat_Tip;
+                break;
+            case "KlixNightAdviser.AdviserBaza.Model.Objekat.Ocjene":
+                userType = (global::KlixNightAdviser.KlixNightAdviser_XamlTypeInfo.XamlUserType)GetXamlTypeByName("KlixNightAdviser.AdviserBaza.Model.Objekat");
+                xamlMember = new global::KlixNightAdviser.KlixNightAdviser_XamlTypeInfo.XamlMember(this, "Ocjene", "System.Collections.Generic.ICollection`1<Int32>");
+                xamlMember.Getter = get_4_Objekat_Ocjene;
+                xamlMember.Setter = set_4_Objekat_Ocjene;
+                break;
+            case "KlixNightAdviser.AdviserBaza.Model.Objekat.Komentari":
+                userType = (global::KlixNightAdviser.KlixNightAdviser_XamlTypeInfo.XamlUserType)GetXamlTypeByName("KlixNightAdviser.AdviserBaza.Model.Objekat");
+                xamlMember = new global::KlixNightAdviser.KlixNightAdviser_XamlTypeInfo.XamlMember(this, "Komentari", "System.Collections.Generic.ICollection`1<KlixNightAdviser.AdviserBaza.Model.Komentar>");
+                xamlMember.Getter = get_5_Objekat_Komentari;
+                xamlMember.Setter = set_5_Objekat_Komentari;
+                break;
+            case "KlixNightAdviser.AdviserBaza.Model.Komentar.Id":
+                userType = (global::KlixNightAdviser.KlixNightAdviser_XamlTypeInfo.XamlUserType)GetXamlTypeByName("KlixNightAdviser.AdviserBaza.Model.Komentar");
+                xamlMember = new global::KlixNightAdviser.KlixNightAdviser_XamlTypeInfo.XamlMember(this, "Id", "Int32");
+                xamlMember.Getter = get_6_Komentar_Id;
+                xamlMember.Setter = set_6_Komentar_Id;
+                break;
+            case "KlixNightAdviser.AdviserBaza.Model.Komentar.KorisnikId":
+                userType = (global::KlixNightAdviser.KlixNightAdviser_XamlTypeInfo.XamlUserType)GetXamlTypeByName("KlixNightAdviser.AdviserBaza.Model.Komentar");
+                xamlMember = new global::KlixNightAdviser.KlixNightAdviser_XamlTypeInfo.XamlMember(this, "KorisnikId", "Int32");
+                xamlMember.Getter = get_7_Komentar_KorisnikId;
+                xamlMember.Setter = set_7_Komentar_KorisnikId;
+                break;
+            case "KlixNightAdviser.AdviserBaza.Model.Komentar.Korisnik":
+                userType = (global::KlixNightAdviser.KlixNightAdviser_XamlTypeInfo.XamlUserType)GetXamlTypeByName("KlixNightAdviser.AdviserBaza.Model.Komentar");
+                xamlMember = new global::KlixNightAdviser.KlixNightAdviser_XamlTypeInfo.XamlMember(this, "Korisnik", "KlixNightAdviser.AdviserBaza.Model.Korisnik");
+                xamlMember.Getter = get_8_Komentar_Korisnik;
+                xamlMember.Setter = set_8_Komentar_Korisnik;
+                break;
+            case "KlixNightAdviser.AdviserBaza.Model.Komentar.TekstKomentara":
+                userType = (global::KlixNightAdviser.KlixNightAdviser_XamlTypeInfo.XamlUserType)GetXamlTypeByName("KlixNightAdviser.AdviserBaza.Model.Komentar");
+                xamlMember = new global::KlixNightAdviser.KlixNightAdviser_XamlTypeInfo.XamlMember(this, "TekstKomentara", "String");
+                xamlMember.Getter = get_9_Komentar_TekstKomentara;
+                xamlMember.Setter = set_9_Komentar_TekstKomentara;
+                break;
+            case "KlixNightAdviser.AdviserBaza.Model.Komentar.ObjekatId":
+                userType = (global::KlixNightAdviser.KlixNightAdviser_XamlTypeInfo.XamlUserType)GetXamlTypeByName("KlixNightAdviser.AdviserBaza.Model.Komentar");
+                xamlMember = new global::KlixNightAdviser.KlixNightAdviser_XamlTypeInfo.XamlMember(this, "ObjekatId", "Int32");
+                xamlMember.Getter = get_10_Komentar_ObjekatId;
+                xamlMember.Setter = set_10_Komentar_ObjekatId;
+                break;
+            case "KlixNightAdviser.AdviserBaza.Model.Komentar.Objekat":
+                userType = (global::KlixNightAdviser.KlixNightAdviser_XamlTypeInfo.XamlUserType)GetXamlTypeByName("KlixNightAdviser.AdviserBaza.Model.Komentar");
+                xamlMember = new global::KlixNightAdviser.KlixNightAdviser_XamlTypeInfo.XamlMember(this, "Objekat", "KlixNightAdviser.AdviserBaza.Model.Objekat");
+                xamlMember.Getter = get_11_Komentar_Objekat;
+                xamlMember.Setter = set_11_Komentar_Objekat;
+                break;
+            case "KlixNightAdviser.AdviserBaza.Model.Komentar.ClanakId":
+                userType = (global::KlixNightAdviser.KlixNightAdviser_XamlTypeInfo.XamlUserType)GetXamlTypeByName("KlixNightAdviser.AdviserBaza.Model.Komentar");
+                xamlMember = new global::KlixNightAdviser.KlixNightAdviser_XamlTypeInfo.XamlMember(this, "ClanakId", "Int32");
+                xamlMember.Getter = get_12_Komentar_ClanakId;
+                xamlMember.Setter = set_12_Komentar_ClanakId;
+                break;
+            case "KlixNightAdviser.AdviserBaza.Model.Komentar.Clanak":
+                userType = (global::KlixNightAdviser.KlixNightAdviser_XamlTypeInfo.XamlUserType)GetXamlTypeByName("KlixNightAdviser.AdviserBaza.Model.Komentar");
+                xamlMember = new global::KlixNightAdviser.KlixNightAdviser_XamlTypeInfo.XamlMember(this, "Clanak", "KlixNightAdviser.AdviserBaza.Model.Clanak");
+                xamlMember.Getter = get_13_Komentar_Clanak;
+                xamlMember.Setter = set_13_Komentar_Clanak;
+                break;
+            case "KlixNightAdviser.AdviserBaza.Model.Objekat.VlasnikId":
+                userType = (global::KlixNightAdviser.KlixNightAdviser_XamlTypeInfo.XamlUserType)GetXamlTypeByName("KlixNightAdviser.AdviserBaza.Model.Objekat");
+                xamlMember = new global::KlixNightAdviser.KlixNightAdviser_XamlTypeInfo.XamlMember(this, "VlasnikId", "Int32");
+                xamlMember.Getter = get_14_Objekat_VlasnikId;
+                xamlMember.Setter = set_14_Objekat_VlasnikId;
+                break;
+            case "KlixNightAdviser.AdviserBaza.Model.Objekat.Vlasnik":
+                userType = (global::KlixNightAdviser.KlixNightAdviser_XamlTypeInfo.XamlUserType)GetXamlTypeByName("KlixNightAdviser.AdviserBaza.Model.Objekat");
+                xamlMember = new global::KlixNightAdviser.KlixNightAdviser_XamlTypeInfo.XamlMember(this, "Vlasnik", "KlixNightAdviser.AdviserBaza.Model.Vlasnik");
+                xamlMember.Getter = get_15_Objekat_Vlasnik;
+                xamlMember.Setter = set_15_Objekat_Vlasnik;
+                break;
+            case "KlixNightAdviser.AdviserBaza.Model.Objekat.Mjesto":
+                userType = (global::KlixNightAdviser.KlixNightAdviser_XamlTypeInfo.XamlUserType)GetXamlTypeByName("KlixNightAdviser.AdviserBaza.Model.Objekat");
+                xamlMember = new global::KlixNightAdviser.KlixNightAdviser_XamlTypeInfo.XamlMember(this, "Mjesto", "String");
+                xamlMember.Getter = get_16_Objekat_Mjesto;
+                xamlMember.Setter = set_16_Objekat_Mjesto;
+                break;
+            case "KlixNightAdviser.AdviserBaza.Model.Objekat.GalerijaId":
+                userType = (global::KlixNightAdviser.KlixNightAdviser_XamlTypeInfo.XamlUserType)GetXamlTypeByName("KlixNightAdviser.AdviserBaza.Model.Objekat");
+                xamlMember = new global::KlixNightAdviser.KlixNightAdviser_XamlTypeInfo.XamlMember(this, "GalerijaId", "Int32");
+                xamlMember.Getter = get_17_Objekat_GalerijaId;
+                xamlMember.Setter = set_17_Objekat_GalerijaId;
+                break;
+            case "KlixNightAdviser.AdviserBaza.Model.Objekat.Galerija":
+                userType = (global::KlixNightAdviser.KlixNightAdviser_XamlTypeInfo.XamlUserType)GetXamlTypeByName("KlixNightAdviser.AdviserBaza.Model.Objekat");
+                xamlMember = new global::KlixNightAdviser.KlixNightAdviser_XamlTypeInfo.XamlMember(this, "Galerija", "KlixNightAdviser.AdviserBaza.Model.Galerija");
+                xamlMember.Getter = get_18_Objekat_Galerija;
+                xamlMember.Setter = set_18_Objekat_Galerija;
+                break;
+            case "KlixNightAdviser.AdviserBaza.Model.Objekat.DogadjajId":
+                userType = (global::KlixNightAdviser.KlixNightAdviser_XamlTypeInfo.XamlUserType)GetXamlTypeByName("KlixNightAdviser.AdviserBaza.Model.Objekat");
+                xamlMember = new global::KlixNightAdviser.KlixNightAdviser_XamlTypeInfo.XamlMember(this, "DogadjajId", "Int32");
+                xamlMember.Getter = get_19_Objekat_DogadjajId;
+                xamlMember.Setter = set_19_Objekat_DogadjajId;
+                break;
+            case "KlixNightAdviser.AdviserBaza.Model.Objekat.Dogadjaj":
+                userType = (global::KlixNightAdviser.KlixNightAdviser_XamlTypeInfo.XamlUserType)GetXamlTypeByName("KlixNightAdviser.AdviserBaza.Model.Objekat");
+                xamlMember = new global::KlixNightAdviser.KlixNightAdviser_XamlTypeInfo.XamlMember(this, "Dogadjaj", "KlixNightAdviser.AdviserBaza.Model.Dogadjaj");
+                xamlMember.Getter = get_20_Objekat_Dogadjaj;
+                xamlMember.Setter = set_20_Objekat_Dogadjaj;
+                break;
+            }
             return xamlMember;
         }
     }

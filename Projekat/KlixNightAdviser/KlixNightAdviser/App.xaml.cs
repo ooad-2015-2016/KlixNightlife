@@ -30,6 +30,9 @@ namespace KlixNightAdviser
         /// executed, and as such is the logical equivalent of main() or WinMain().
         /// </summary>
         public string tip { get; set; }
+        public Vlasnik aktivanVlasnik { get; set; }
+        public Korisnik aktivanKorisnik { get; set; }
+
         public App()
         {
             Microsoft.ApplicationInsights.WindowsAppInitializer.InitializeAsync(
@@ -56,7 +59,7 @@ namespace KlixNightAdviser
 #if DEBUG
             if (System.Diagnostics.Debugger.IsAttached)
             {
-                this.DebugSettings.EnableFrameRateCounter = true;
+                this.DebugSettings.EnableFrameRateCounter =false;
             }
 #endif
 

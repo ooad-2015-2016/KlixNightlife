@@ -48,5 +48,31 @@ namespace KlixNightAdviser.AdviserBaza.ModelView
 
             return true;
         }
+        public bool LoginVlasnika (string korisničko_ime, string sifra)
+        {
+            //trazi u bazi ima li vlasnika
+            //onda vratiš kog vlasnika koji se registrovao
+            //sad za sad predpostavljamo da je login uspio
+
+
+            //kad login uspije, zapamtimo koji nam je to aktivanVlasnik
+            //sad cemo napraviti nekog zamisljenog vlasnika
+            //i reci da je on aktivan
+            Vlasnik v = new Vlasnik();
+            {
+                v.Ime = "Default Ime";
+                v.EMail = "defaulf@etf.unsa.ba";
+                v.DatumRodjenja = DateTime.Now;
+                v.KorisnickoIme = "default";
+                v.Sifra = "sifra";
+                v.Spol = Spol.Musko;
+            }
+            var obj = App.Current as App;
+            obj.aktivanVlasnik = v;
+
+
+
+                return true;
+        }
     }
 }

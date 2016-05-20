@@ -25,7 +25,6 @@ namespace KlixNightAdviser
 
     public sealed partial class MainPage : Page
     {
-        public int proba = new int();
         public MainPage()
         {
             this.InitializeComponent();
