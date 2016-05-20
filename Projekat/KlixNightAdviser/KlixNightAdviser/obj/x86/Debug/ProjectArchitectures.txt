@@ -1,1 +1,1 @@
-F:\OOAD\Projekat\KlixNightAdviser\KlixNightAdviser\KlixNightAdviser.csproj;x86
+C:\projekat\KlixNightlife\Projekat\KlixNightAdviser\KlixNightAdviser\KlixNightAdviser.csproj;x86

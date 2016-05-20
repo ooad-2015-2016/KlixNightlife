@@ -13,9 +13,12 @@ namespace KlixNightAdviser.AdviserBaza.Model
         public int Id { get; set; }
         public string Naslov { get; set; }
         public string Tekst { get; set; }
-        public ICollection<Komentar> Komentari { get; set; }
         public ICollection<int> Ocjene { get; set; }
+
         public int GalerijaId { get; set; }
-        public Galerija Galerija { get; set; }
+
+        public virtual Galerija Galerija { get; set; }
+        public virtual ICollection<Komentar> Komentari { get; set; }
+
     }
 }

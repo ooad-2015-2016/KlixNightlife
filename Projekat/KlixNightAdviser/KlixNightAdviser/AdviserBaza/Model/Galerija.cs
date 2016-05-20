@@ -11,8 +11,11 @@ namespace KlixNightAdviser.AdviserBaza.Model
     {
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int Id { get; set; }
+
         ICollection<byte[]> Slike { get; set; }
-        public int ClanakId { get; set; }
-        public Clanak Clanak { get; set; }
+
+        public virtual Clanak Clanak { get; set; }
+
+        public virtual Objekat Objekat { get; set; }
     }
 }

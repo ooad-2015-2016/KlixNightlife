@@ -124,9 +124,9 @@
     <Compile Include="AdviserBaza\View\MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\20160513095905_Migracija.cs" />
-    <Compile Include="Migrations\20160513095905_Migracija.designer.cs">
-      <DependentUpon>20160513095905_Migracija.cs</DependentUpon>
+    <Compile Include="Migrations\20160520141232_Initial.cs" />
+    <Compile Include="Migrations\20160520141232_Initial.designer.cs">
+      <DependentUpon>20160520141232_Initial.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\AdviserDBContextModelSnapshot.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

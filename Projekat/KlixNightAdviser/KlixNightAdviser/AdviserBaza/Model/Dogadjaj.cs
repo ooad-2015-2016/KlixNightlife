@@ -14,9 +14,11 @@ namespace KlixNightAdviser.AdviserBaza.Model
         public string Naziv { get; set; }
         public DateTime Datum { get; set; }
         public DateTime Vrijeme { get; set; }
-        public int ObjekatId { get; set; }
-        public Objekat Objekat { get; set; }
         public TipDogađaja Tip { get; set; }
         public byte[] Slika { get; set; }
+
+        public int ObjekatId { get; set; }
+
+        public virtual Objekat Objekat { get; set; }
     }
 }

@@ -53,8 +53,6 @@ namespace KlixNightAdviserMigrations
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd();
 
-                    b.Property<int>("ClanakId");
-
                     b.Key("Id");
                 });
 
@@ -107,8 +105,6 @@ namespace KlixNightAdviserMigrations
 
                     b.Property<string>("Adresa");
 
-                    b.Property<int>("DogadjajId");
-
                     b.Property<int>("GalerijaId");
 
                     b.Property<string>("Mjesto");
@@ -124,7 +120,7 @@ namespace KlixNightAdviserMigrations
 
             builder.Entity("KlixNightAdviser.AdviserBaza.Model.Vlasnik", b =>
                 {
-                    b.Property<int>("VlasnikId")
+                    b.Property<int>("Id")
                         .ValueGeneratedOnAdd();
 
                     b.Property<DateTime>("DatumRodjenja");
@@ -139,14 +135,21 @@ namespace KlixNightAdviserMigrations
 
                     b.Property<int>("Spol");
 
-                    b.Key("VlasnikId");
+                    b.Key("Id");
                 });
 
-            builder.Entity("KlixNightAdviser.AdviserBaza.Model.Galerija", b =>
+            builder.Entity("KlixNightAdviser.AdviserBaza.Model.Clanak", b =>
                 {
-                    b.Reference("KlixNightAdviser.AdviserBaza.Model.Clanak")
+                    b.Reference("KlixNightAdviser.AdviserBaza.Model.Galerija")
                         .InverseReference()
-                        .ForeignKey("KlixNightAdviser.AdviserBaza.Model.Galerija", "ClanakId");
+                        .ForeignKey("KlixNightAdviser.AdviserBaza.Model.Clanak", "GalerijaId");
+                });
+
+            builder.Entity("KlixNightAdviser.AdviserBaza.Model.Dogadjaj", b =>
+                {
+                    b.Reference("KlixNightAdviser.AdviserBaza.Model.Objekat")
+                        .InverseCollection()
+                        .ForeignKey("ObjekatId");
                 });
 
             builder.Entity("KlixNightAdviser.AdviserBaza.Model.Komentar", b =>
@@ -166,13 +169,9 @@ namespace KlixNightAdviserMigrations
 
             builder.Entity("KlixNightAdviser.AdviserBaza.Model.Objekat", b =>
                 {
-                    b.Reference("KlixNightAdviser.AdviserBaza.Model.Dogadjaj")
-                        .InverseReference()
-                        .ForeignKey("KlixNightAdviser.AdviserBaza.Model.Objekat", "DogadjajId");
-
                     b.Reference("KlixNightAdviser.AdviserBaza.Model.Galerija")
-                        .InverseCollection()
-                        .ForeignKey("GalerijaId");
+                        .InverseReference()
+                        .ForeignKey("KlixNightAdviser.AdviserBaza.Model.Objekat", "GalerijaId");
 
                     b.Reference("KlixNightAdviser.AdviserBaza.Model.Vlasnik")
                         .InverseCollection()

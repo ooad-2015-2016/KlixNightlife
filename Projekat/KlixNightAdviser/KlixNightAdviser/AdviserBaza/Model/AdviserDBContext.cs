@@ -26,7 +26,7 @@ namespace KlixNightAdviser.AdviserBaza.Model
         //Svaki korisnik koji pokrene aplikaciju će imati kreiranu bazu lokalno kod sebe
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            string databaseFilePath = "BazaAdviserDB.db";
+            string databaseFilePath = "AdviserBazaContext.db";
             try
             {
                 databaseFilePath = Path.Combine(ApplicationData.Current.LocalFolder.Path, databaseFilePath);

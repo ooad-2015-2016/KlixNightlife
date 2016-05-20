@@ -20,5 +20,7 @@ namespace KlixNightAdviser.AdviserBaza.Model
         public DateTime DatumRegistracije { get; set; }
         public string Adresa { get; set; }
         public string BrojTelefona { get; set; }
+
+        public virtual ICollection<Komentar> Komentari { get; set; }
     }
 }

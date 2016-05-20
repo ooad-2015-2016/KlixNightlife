@@ -5,40 +5,20 @@ using Microsoft.Data.Entity.Migrations.Operations;
 
 namespace KlixNightAdviserMigrations
 {
-    public partial class Migracija : Migration
+    public partial class Initial : Migration
     {
         public override void Up(MigrationBuilder migration)
         {
             migration.CreateTable(
-                name: "Clanak",
+                name: "Galerija",
                 columns: table => new
                 {
-                    Id = table.Column(type: "INTEGER", nullable: false),
-                        //.Annotation("Sqlite:Autoincrement", true),
-                    GalerijaId = table.Column(type: "INTEGER", nullable: false),
-                    Naslov = table.Column(type: "TEXT", nullable: true),
-                    Tekst = table.Column(type: "TEXT", nullable: true)
+                    Id = table.Column(type: "INTEGER", nullable: false)
+                        //.Annotation("Sqlite:Autoincrement", true)
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_Clanak", x => x.Id);
-                });
-            migration.CreateTable(
-                name: "Dogadjaj",
-                columns: table => new
-                {
-                    Id = table.Column(type: "INTEGER", nullable: false),
-                        //.Annotation("Sqlite:Autoincrement", true),
-                    Datum = table.Column(type: "TEXT", nullable: false),
-                    Naziv = table.Column(type: "TEXT", nullable: true),
-                    ObjekatId = table.Column(type: "INTEGER", nullable: false),
-                    Slika = table.Column(type: "BLOB", nullable: true),
-                    Tip = table.Column(type: "INTEGER", nullable: false),
-                    Vrijeme = table.Column(type: "TEXT", nullable: false)
-                },
-                constraints: table =>
-                {
-                    table.PrimaryKey("PK_Dogadjaj", x => x.Id);
+                    table.PrimaryKey("PK_Galerija", x => x.Id);
                 });
             migration.CreateTable(
                 name: "Korisnik",
@@ -64,7 +44,7 @@ namespace KlixNightAdviserMigrations
                 name: "Vlasnik",
                 columns: table => new
                 {
-                    VlasnikId = table.Column(type: "INTEGER", nullable: false),
+                    Id = table.Column(type: "INTEGER", nullable: false),
                         //.Annotation("Sqlite:Autoincrement", true),
                     DatumRodjenja = table.Column(type: "TEXT", nullable: false),
                     EMail = table.Column(type: "TEXT", nullable: true),
@@ -75,23 +55,25 @@ namespace KlixNightAdviserMigrations
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_Vlasnik", x => x.VlasnikId);
+                    table.PrimaryKey("PK_Vlasnik", x => x.Id);
                 });
             migration.CreateTable(
-                name: "Galerija",
+                name: "Clanak",
                 columns: table => new
                 {
                     Id = table.Column(type: "INTEGER", nullable: false),
                         //.Annotation("Sqlite:Autoincrement", true),
-                    ClanakId = table.Column(type: "INTEGER", nullable: false)
+                    GalerijaId = table.Column(type: "INTEGER", nullable: false),
+                    Naslov = table.Column(type: "TEXT", nullable: true),
+                    Tekst = table.Column(type: "TEXT", nullable: true)
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_Galerija", x => x.Id);
+                    table.PrimaryKey("PK_Clanak", x => x.Id);
                     table.ForeignKey(
-                        name: "FK_Galerija_Clanak_ClanakId",
-                        columns: x => x.ClanakId,
-                        referencedTable: "Clanak",
+                        name: "FK_Clanak_Galerija_GalerijaId",
+                        columns: x => x.GalerijaId,
+                        referencedTable: "Galerija",
                         referencedColumn: "Id");
                 });
             migration.CreateTable(
@@ -101,7 +83,6 @@ namespace KlixNightAdviserMigrations
                     Id = table.Column(type: "INTEGER", nullable: false),
                         //.Annotation("Sqlite:Autoincrement", true),
                     Adresa = table.Column(type: "TEXT", nullable: true),
-                    DogadjajId = table.Column(type: "INTEGER", nullable: false),
                     GalerijaId = table.Column(type: "INTEGER", nullable: false),
                     Mjesto = table.Column(type: "TEXT", nullable: true),
                     Naziv = table.Column(type: "TEXT", nullable: true),
@@ -112,11 +93,6 @@ namespace KlixNightAdviserMigrations
                 {
                     table.PrimaryKey("PK_Objekat", x => x.Id);
                     table.ForeignKey(
-                        name: "FK_Objekat_Dogadjaj_DogadjajId",
-                        columns: x => x.DogadjajId,
-                        referencedTable: "Dogadjaj",
-                        referencedColumn: "Id");
-                    table.ForeignKey(
                         name: "FK_Objekat_Galerija_GalerijaId",
                         columns: x => x.GalerijaId,
                         referencedTable: "Galerija",
@@ -125,7 +101,29 @@ namespace KlixNightAdviserMigrations
                         name: "FK_Objekat_Vlasnik_VlasnikId",
                         columns: x => x.VlasnikId,
                         referencedTable: "Vlasnik",
-                        referencedColumn: "VlasnikId");
+                        referencedColumn: "Id");
+                });
+            migration.CreateTable(
+                name: "Dogadjaj",
+                columns: table => new
+                {
+                    Id = table.Column(type: "INTEGER", nullable: false),
+                        //.Annotation("Sqlite:Autoincrement", true),
+                    Datum = table.Column(type: "TEXT", nullable: false),
+                    Naziv = table.Column(type: "TEXT", nullable: true),
+                    ObjekatId = table.Column(type: "INTEGER", nullable: false),
+                    Slika = table.Column(type: "BLOB", nullable: true),
+                    Tip = table.Column(type: "INTEGER", nullable: false),
+                    Vrijeme = table.Column(type: "TEXT", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Dogadjaj", x => x.Id);
+                    table.ForeignKey(
+                        name: "FK_Dogadjaj_Objekat_ObjekatId",
+                        columns: x => x.ObjekatId,
+                        referencedTable: "Objekat",
+                        referencedColumn: "Id");
                 });
             migration.CreateTable(
                 name: "Komentar",
@@ -161,13 +159,13 @@ namespace KlixNightAdviserMigrations
 
         public override void Down(MigrationBuilder migration)
         {
+            migration.DropTable("Dogadjaj");
             migration.DropTable("Komentar");
+            migration.DropTable("Clanak");
             migration.DropTable("Korisnik");
             migration.DropTable("Objekat");
-            migration.DropTable("Dogadjaj");
             migration.DropTable("Galerija");
             migration.DropTable("Vlasnik");
-            migration.DropTable("Clanak");
         }
     }
 }
