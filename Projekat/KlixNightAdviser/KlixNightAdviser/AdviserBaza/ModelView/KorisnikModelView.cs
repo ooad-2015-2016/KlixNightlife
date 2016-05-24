@@ -21,7 +21,8 @@ namespace KlixNightAdviser.AdviserBaza.ModelView
             noviKorisnik.Sifra = sifra;
 
             var provjeriUnosKorisnika = DodajKorisnikaUBazu(noviKorisnik);
-
+            //moras prvo provjeriti 
+            //ima li vec takvo korisnicno ime u bazi
             if (provjeriUnosKorisnika)
             {
                 // 
@@ -41,6 +42,10 @@ namespace KlixNightAdviser.AdviserBaza.ModelView
             context.SaveChanges();
 
             return true; 
+        }
+        public bool LoginKorisnika(string korisnicko_ime, string sifra)
+        {
+            return true;
         }
     }
 }

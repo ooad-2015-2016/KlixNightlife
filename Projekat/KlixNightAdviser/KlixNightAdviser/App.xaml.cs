@@ -42,7 +42,7 @@ namespace KlixNightAdviser
             this.Suspending += OnSuspending;
             using (var db = new AdviserDBContext())
             {
-                db.Database.ApplyMigrations();
+              //  db.Database.ApplyMigrations();
                 DefaultPodaci.Initialize(db);
             }
 

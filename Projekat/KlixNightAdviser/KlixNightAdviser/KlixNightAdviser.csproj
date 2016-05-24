@@ -124,11 +124,11 @@
     <Compile Include="AdviserBaza\View\MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\20160520141232_Initial.cs" />
-    <Compile Include="Migrations\20160520141232_Initial.designer.cs">
-      <DependentUpon>20160520141232_Initial.cs</DependentUpon>
+    <Compile Include="KlixNightAdviserMigrations\20160524153121_InitialMigration1.cs" />
+    <Compile Include="KlixNightAdviserMigrations\20160524153121_InitialMigration1.designer.cs">
+      <DependentUpon>20160524153121_InitialMigration1.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\AdviserDBContextModelSnapshot.cs" />
+    <Compile Include="KlixNightAdviserMigrations\AdviserDBContextModelSnapshot.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="AdviserBaza\View\Registracija.xaml.cs">
       <DependentUpon>Registracija.xaml</DependentUpon>

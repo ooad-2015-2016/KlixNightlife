@@ -31,15 +31,13 @@ namespace KlixNightAdviser.AdviserBaza.ModelView
         }
         public void DodajObjekat(Objekat objekt, Vlasnik vlasnik)
         {
-            //sad nešto uraditi, al to treba sa icollection
-            //ili sta već
+            //dodaj u bazu
+            //ja pokusala, al nece
         }
 
         private bool DodajVlasnikaUBazu(Vlasnik vlasnik)
         {
-            //dodaš sad
-            //i ako je uspjesno, vrati true, ako ne false
-            //za sad predpostavimo da je true
+            
 
             var context = new AdviserDBContext();
             

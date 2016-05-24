@@ -13,12 +13,13 @@
         <TextBox x:ConnectionId='2' x:Name="textBox" HorizontalAlignment="Left" Margin="10,76,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="180" PlaceholderText="Naziv objekta"/>
         <TextBox x:ConnectionId='3' x:Name="textBox1" HorizontalAlignment="Left" Margin="10,116,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="180" PlaceholderText="Adresa"/>
         <TextBox x:ConnectionId='4' x:Name="textBox2" HorizontalAlignment="Left" Margin="10,156,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="180" PlaceholderText="Mjesto"/>
-        <ComboBox x:ConnectionId='5' x:Name="comboBox" HorizontalAlignment="Left" Margin="10,193,0,0" VerticalAlignment="Top" Width="180">
+        <ComboBox x:ConnectionId='5' x:Name="comboBox" HorizontalAlignment="Left" Margin="10,193,0,0" VerticalAlignment="Top" Width="180" IsDropDownOpen="True">
             <ListBoxItem Content="Restoran"/>
             <ListBoxItem Content="Kafana"/>
             <ListBoxItem Content="Bistro"/>
             <ListBoxItem Content="Disco"/>
         </ComboBox>
+        <Button x:ConnectionId='6' x:Name="button" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="80,556,0,0" Width="189" Height="36" Content="Dodaj novi objekat"                     />
     </Grid>
 </Page>
 

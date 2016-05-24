@@ -12,6 +12,7 @@ using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
+using KlixNightAdviser.AdviserBaza.Model;
 
 // The Blank Page item template is documented at http://go.microsoft.com/fwlink/?LinkId=234238
 
@@ -42,6 +43,20 @@ namespace KlixNightAdviser.AdviserBaza.View
         private void button_Click(object sender, RoutedEventArgs e)
         {
             this.Frame.Navigate(typeof(DodavanjeObjekta));
+        }
+
+        private void button_Click_1(object sender, RoutedEventArgs e)
+        {
+            var obj = App.Current as App;
+            obj.aktivanVlasnik = null;
+            this.Frame.Navigate(typeof(MainPage));
+        }
+
+        private void Page_Loaded(object sender, RoutedEventArgs e)
+        {
+            var context = new AdviserDBContext();
+
+            listBox.ItemsSource = context.Objekti.ToList();
         }
     }
 }

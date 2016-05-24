@@ -6,11 +6,12 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:Model="using:KlixNightAdviser.AdviserBaza.Model"
     x:Class="KlixNightAdviser.AdviserBaza.View.PregledVlasnika"
-    mc:Ignorable="d">
+    mc:Ignorable="d" Loaded="Page_Loaded">
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" RenderTransformOrigin="0.067,0.408">
         <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="Wrap" Text="Dobrodošli" VerticalAlignment="Top"/>
         <Button x:Name="button" Content="Dodaj novi objekat" HorizontalAlignment="Left" Margin="10,105,0,0" VerticalAlignment="Top" Click="button_Click"/>
+        <Button x:Name="button1" Content="LogOut" HorizontalAlignment="Left" Margin="280,10,0,0" VerticalAlignment="Top" Click="button_Click_1"/>
         <ListBox x:Name="listBox" HorizontalAlignment="Left" Height="228" VerticalAlignment="Top" Width="276" Margin="10,239,0,0" SelectionChanged="listBox_SelectionChanged"/>
 
     </Grid>

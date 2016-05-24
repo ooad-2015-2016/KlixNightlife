@@ -24,6 +24,10 @@ namespace KlixNightAdviser.AdviserBaza.Model
         public virtual ICollection<Dogadjaj> Dogadjaji { get; set; }
         public virtual Vlasnik Vlasnik { get; set; }
         public virtual Galerija Galerija { get; set; }
+        public override string ToString()
+        {
+            return Naziv + " " + Adresa;
+        }
 
     }
 }

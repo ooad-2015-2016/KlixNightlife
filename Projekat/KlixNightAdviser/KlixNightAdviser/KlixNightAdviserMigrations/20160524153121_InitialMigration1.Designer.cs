@@ -7,11 +7,11 @@ using KlixNightAdviser.AdviserBaza.Model;
 namespace KlixNightAdviserMigrations
 {
     [ContextType(typeof(AdviserDBContext))]
-    partial class Initial
+    partial class InitialMigration1
     {
         public override string Id
         {
-            get { return "20160520141232_Initial"; }
+            get { return "20160524153121_InitialMigration1"; }
         }
 
         public override string ProductVersion
