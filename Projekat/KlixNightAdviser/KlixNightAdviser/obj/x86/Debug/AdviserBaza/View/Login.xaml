@@ -14,6 +14,7 @@
         <TextBlock x:ConnectionId='4' x:Name="textBlock1" HorizontalAlignment="Left" Margin="10,117,0,0" TextWrapping="Wrap" Text="Password" VerticalAlignment="Top"/>
         <Button x:ConnectionId='5' x:Name="button" Content="Login" HorizontalAlignment="Left" Margin="192,154,0,0" VerticalAlignment="Top"                     />
         <Button x:ConnectionId='6' x:Name="button1" Content="Nemate korisnicki nalog?" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="62,496,0,0"                      />
+        <TextBlock x:ConnectionId='7' x:Name="textBlock2" HorizontalAlignment="Left" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top"/>
 
     </Grid>
 </Page>

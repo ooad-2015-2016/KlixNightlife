@@ -112,6 +112,9 @@
     <Compile Include="AdviserBaza\View\DodavanjeObjekta.xaml.cs">
       <DependentUpon>DodavanjeObjekta.xaml</DependentUpon>
     </Compile>
+    <Compile Include="AdviserBaza\View\PregledObjekta.xaml.cs">
+      <DependentUpon>PregledObjekta.xaml</DependentUpon>
+    </Compile>
     <Compile Include="AdviserBaza\View\PregledVlasnika.xaml.cs">
       <DependentUpon>PregledVlasnika.xaml</DependentUpon>
     </Compile>
@@ -167,6 +170,10 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
+    <Page Include="AdviserBaza\View\PregledObjekta.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="AdviserBaza\View\PregledVlasnika.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -176,7 +183,6 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
   </ItemGroup>
-  <ItemGroup />
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
     <VisualStudioVersion>14.0</VisualStudioVersion>
   </PropertyGroup>

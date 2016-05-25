@@ -18,6 +18,8 @@
             <ListBoxItem Content="Kafana"/>
             <ListBoxItem Content="Bistro"/>
             <ListBoxItem Content="Disco"/>
+            <ListBoxItem Content="Bife"/>
+            
         </ComboBox>
         <Button x:Name="button" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="80,556,0,0" Width="189" Height="36" Content="Dodaj novi objekat" Click="button_Click"/>
     </Grid>

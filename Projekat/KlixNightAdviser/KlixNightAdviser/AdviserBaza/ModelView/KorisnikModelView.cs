@@ -7,6 +7,7 @@ using KlixNightAdviser.AdviserBaza.Model;
 
 namespace KlixNightAdviser.AdviserBaza.ModelView
 {
+    public enum PovratnaPoruka { LoginOK, PogresnaSifra, PogresanUsername}
     class KorisnikModelView
     {
         public void DodajKorisnika(string ime, string adresa, string brojt, string korisnickoIme, string email, Spol s, string sifra)
@@ -43,9 +44,20 @@ namespace KlixNightAdviser.AdviserBaza.ModelView
 
             return true; 
         }
-        public bool LoginKorisnika(string korisnicko_ime, string sifra)
+        public PovratnaPoruka LoginKorisnika(string korisnicko_ime, string sifra)
         {
-            return true;
+            var context = new AdviserDBContext();
+            List<Korisnik> listaKorisnika = new List<Korisnik>();
+            listaKorisnika = (List<Korisnik>)context.Korisnici.ToList();
+            for (int i=0; i<listaKorisnika.Count; i++)
+                if (listaKorisnika[i].KorisnickoIme==korisnicko_ime)
+                {
+                    if (listaKorisnika[i].Sifra == sifra) return PovratnaPoruka.LoginOK;
+                    else return PovratnaPoruka.PogresnaSifra;
+                }
+            return PovratnaPoruka.PogresanUsername;
         }
+
+        
     }
 }

@@ -32,6 +32,7 @@ namespace KlixNightAdviser
         public string tip { get; set; }
         public Vlasnik aktivanVlasnik { get; set; }
         public Korisnik aktivanKorisnik { get; set; }
+        public Object objekatPregled { get; set; }
 
         public App()
         {

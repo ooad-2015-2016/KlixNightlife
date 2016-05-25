@@ -1435,3 +1435,8 @@ F:\OOAD\Projekat\KlixNightAdviser\KlixNightAdviser\obj\x86\Debug\qualifiers.txt
 F:\OOAD\Projekat\KlixNightAdviser\KlixNightAdviser\obj\x86\Debug\qualifiers.txt.intermediate
 F:\OOAD\Projekat\KlixNightAdviser\KlixNightAdviser\obj\x86\Debug\MultipleQualifiersPerDimensionFound.txt
 F:\OOAD\Projekat\KlixNightAdviser\KlixNightAdviser\obj\x86\Debug\ProjectArchitectures.txt
+F:\OOAD\Projekat\KlixNightAdviser\KlixNightAdviser\bin\x86\Debug\AdviserBaza\View\PregledObjekta.xbf
+F:\OOAD\Projekat\KlixNightAdviser\KlixNightAdviser\obj\x86\Debug\AdviserBaza\View\PregledObjekta.g.i.cs
+F:\OOAD\Projekat\KlixNightAdviser\KlixNightAdviser\obj\x86\Debug\AdviserBaza\View\PregledObjekta.g.cs
+F:\OOAD\Projekat\KlixNightAdviser\KlixNightAdviser\obj\x86\Debug\AdviserBaza\View\PregledObjekta.xaml
+F:\OOAD\Projekat\KlixNightAdviser\KlixNightAdviser\obj\x86\Debug\AdviserBaza\View\PregledObjekta.xbf

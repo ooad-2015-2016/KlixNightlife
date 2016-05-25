@@ -66,10 +66,20 @@ namespace KlixNightAdviser
             }
             else if (obj.tip=="korisnik")
             {
-                //provjeriti dali ima uopste ovaj korisnik u bazi
-                //ukoliko nema, izbaciti poruku da nije username okey 
-                //ukoliko ima, a sifra je pogresna, obavjest da je pogresna
-                //a ukoliko je i username i sifra tacna, onda se vraca na pocetnu formu
+
+                KorisnikModelView LoginKorisnika = new KorisnikModelView();
+                PovratnaPoruka p = LoginKorisnika.LoginKorisnika(textBox.Text, textBox1.Text);
+                if (p == PovratnaPoruka.LoginOK) this.Frame.Navigate(typeof(MainPage));
+                else if (p == PovratnaPoruka.PogresanUsername)
+                {
+                    textBlock2.Text = p.ToString();
+                }
+                else if (p == PovratnaPoruka.PogresnaSifra)
+                {
+                    textBlock2.Text = p.ToString();
+                }
+                
+
             }
         }
         private void DialogBoxShow(IUICommand c)
