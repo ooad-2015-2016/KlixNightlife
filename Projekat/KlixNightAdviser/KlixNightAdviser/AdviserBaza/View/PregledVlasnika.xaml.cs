@@ -23,21 +23,23 @@ namespace KlixNightAdviser.AdviserBaza.View
     /// </summary>
     public sealed partial class PregledVlasnika : Page
     {
+        List<Objekat> objektiVlasnika = new List<Objekat>();
         public PregledVlasnika()
         {
             this.InitializeComponent();
             var obj = App.Current as App;
             textBlock.Text = "Dobrodošli " + obj.aktivanVlasnik.Ime;
-            listBox.ItemsSource = obj.aktivanVlasnik.Objekti;
         }
 
         private void listBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-            //sad su ovdje objekti
-            //i kad se pritisne na neki
-            //onda se otvara forma koja prikazuje podatke o tom objektu, i može se mjenjati, ili obrisati
-            //al to kad malo popunim bazu i dodam objekata
-            // pa da se može vidjeti da li radi
+            
+            if (listBox.SelectedIndex!=-1)
+            {
+                var obj = App.Current as App;
+                obj.objekatPregled = objektiVlasnika[listBox.SelectedIndex];
+                this.Frame.Navigate(typeof(UredjivanjeObjekta));
+            }
         }
 
         private void button_Click(object sender, RoutedEventArgs e)
@@ -55,8 +57,16 @@ namespace KlixNightAdviser.AdviserBaza.View
         private void Page_Loaded(object sender, RoutedEventArgs e)
         {
             var context = new AdviserDBContext();
-
-            listBox.ItemsSource = context.Objekti.ToList();
+            var obj = App.Current as App;
+            List<Objekat> sviObjekti = context.Objekti.ToList();
+            
+            for (int i=0; i<sviObjekti.Count; i++)
+            {
+                if (sviObjekti[i].VlasnikId==obj.aktivanVlasnik.Id)
+                    objektiVlasnika.Add(sviObjekti[i]);
+                    
+            }
+            listBox.ItemsSource = objektiVlasnika; 
         }
     }
 }

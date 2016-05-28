@@ -29,10 +29,16 @@ namespace KlixNightAdviser.AdviserBaza.ModelView
                 //nije uspio
             }
         }
-        public void DodajObjekat(Objekat objekt, Vlasnik vlasnik)
+        public bool DodajObjekat(Objekat objekt, Vlasnik vlasnik)
         {
-            //dodaj u bazu
-            //ja pokusala, al nece
+            var context = new AdviserDBContext();
+            objekt.VlasnikId = vlasnik.Id;
+            //pa kad doda galeriju, stavicemo neku drugu vrijednost
+            objekt.GalerijaId = 1;
+            context.Objekti.AddRange(objekt);
+            context.SaveChanges();
+            return true;
+
         }
 
         private bool DodajVlasnikaUBazu(Vlasnik vlasnik)
@@ -46,31 +52,38 @@ namespace KlixNightAdviser.AdviserBaza.ModelView
 
             return true;
         }
-        public bool LoginVlasnika (string korisničko_ime, string sifra)
+        public PovratnaPoruka LoginVlasnika (string korisnicko_ime, string sifra)
         {
-            //trazi u bazi ima li vlasnika
-            //onda vratiš kog vlasnika koji se registrovao
-            //sad za sad predpostavljamo da je login uspio
+            var context = new AdviserDBContext();
+
+            List<Vlasnik> listaVlasnika = context.Vlasnici.ToList();
 
 
             //kad login uspije, zapamtimo koji nam je to aktivanVlasnik
             //sad cemo napraviti nekog zamisljenog vlasnika
             //i reci da je on aktivan
-            Vlasnik v = new Vlasnik();
-            {
-                v.Ime = "Default Ime";
-                v.EMail = "defaulf@etf.unsa.ba";
-                v.DatumRodjenja = DateTime.Now;
-                v.KorisnickoIme = "default";
-                v.Sifra = "sifra";
-                v.Spol = Spol.Musko;
-            }
-            var obj = App.Current as App;
-            obj.aktivanVlasnik = v;
-
-
-
-                return true;
+            for (int i = 0; i < listaVlasnika.Count; i++)
+                if (listaVlasnika[i].KorisnickoIme == korisnicko_ime)
+                {
+                    if (listaVlasnika[i].Sifra == sifra)
+                    {
+                        var obj = App.Current as App;
+                        obj.aktivanVlasnik = listaVlasnika[i];
+                        return PovratnaPoruka.LoginOK;
+                    }
+                        
+                    else return PovratnaPoruka.PogresnaSifra;
+                }
+            return PovratnaPoruka.PogresanUsername;                       
         }
+
+        public bool ObrisiObjekat(Objekat objekt)
+        {
+            var context = new AdviserDBContext();       
+            context.RemoveRange(objekt);
+            context.SaveChanges();
+            return true;
+        }
+
     }
 }

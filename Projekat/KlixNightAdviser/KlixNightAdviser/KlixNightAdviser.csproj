@@ -95,6 +95,8 @@
     <None Include="project.json" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AdviserBaza\ModelView\ClanakModelView.cs" />
+    <Compile Include="AdviserBaza\ModelView\DogadjajModelView.cs" />
     <Compile Include="AdviserBaza\ModelView\KorisnikModelView.cs" />
     <Compile Include="AdviserBaza\ModelView\VlasnikModelView.cs" />
     <Compile Include="AdviserBaza\Model\AdviserDBContext.cs" />
@@ -109,6 +111,12 @@
     <Compile Include="AdviserBaza\Model\TipDogađaja.cs" />
     <Compile Include="AdviserBaza\Model\TipObjekta.cs" />
     <Compile Include="AdviserBaza\Model\Vlasnik.cs" />
+    <Compile Include="AdviserBaza\View\DodavanjeClanka.xaml.cs">
+      <DependentUpon>DodavanjeClanka.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="AdviserBaza\View\DodavanjeDogadjaja.xaml.cs">
+      <DependentUpon>DodavanjeDogadjaja.xaml</DependentUpon>
+    </Compile>
     <Compile Include="AdviserBaza\View\DodavanjeObjekta.xaml.cs">
       <DependentUpon>DodavanjeObjekta.xaml</DependentUpon>
     </Compile>
@@ -117,6 +125,9 @@
     </Compile>
     <Compile Include="AdviserBaza\View\PregledVlasnika.xaml.cs">
       <DependentUpon>PregledVlasnika.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="AdviserBaza\View\UredjivanjeObjekta.xaml.cs">
+      <DependentUpon>UredjivanjeObjekta.xaml</DependentUpon>
     </Compile>
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
@@ -158,6 +169,14 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Page Include="AdviserBaza\View\DodavanjeClanka.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="AdviserBaza\View\DodavanjeDogadjaja.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="AdviserBaza\View\DodavanjeObjekta.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -179,6 +198,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="AdviserBaza\View\Registracija.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="AdviserBaza\View\UredjivanjeObjekta.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

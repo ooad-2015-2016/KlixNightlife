@@ -24,17 +24,19 @@ namespace KlixNightAdviser
     /// <summary>
     /// An empty page that can be used on its own or navigated to within a Frame.
     /// </summary>
+    enum Greska { PrazanUsername, PrazanPasword, OK}
     public sealed partial class Login : Page
     {
         public Login()
         {
             this.InitializeComponent();
+            textBlock2.Text = "";
         }
 
-        private async void button_Click(object sender, RoutedEventArgs e)
+        private void button_Click(object sender, RoutedEventArgs e)
         {
             var obj = App.Current as App;
-            if (obj.tip=="vlasnik")
+            if (obj.tip == "vlasnik")
             {
                 VlasnikModelView vmv = new VlasnikModelView();
                 //trazi u bazi ima li vlasnika
@@ -42,42 +44,43 @@ namespace KlixNightAdviser
                 //kad login uspije, zapamtimo koji nam je to aktivanVlasnik
                 //sad cemo napraviti nekog zamisljenog vlasnika
                 //i reci da je on aktivan
-                if (vmv.LoginVlasnika(textBlock.Text, textBlock1.Text))
+                PovratnaPoruka poruka = vmv.LoginVlasnika(textBox.Text, passwordBox.Password);
+                if (poruka==PovratnaPoruka.LoginOK)
                 {
+                    
                     this.Frame.Navigate(typeof(PregledVlasnika));
                 }
                 else
                 {
-                    //ovdje treba više različitih poruka, ovisno od toga šta nije ok
-                    //nema korisnickog imena u bazi
-                    //ima ime, ali nema sifra
-                    MessageDialog dialog = new MessageDialog("Login nije uspio!");
-                    
-                    dialog.Commands.Add(new UICommand("OK", new UICommandInvokedHandler(DialogBoxShow)));
-
-                    await dialog.ShowAsync();
+                    textBlock2.Text = poruka.ToString();
                 }
-               
+
                 //vodi ga na novu formu
                 //u kojoj on ima pregled svojih objekata 
 
-                
-                
+
+
             }
-            else if (obj.tip=="korisnik")
+            else if (obj.tip == "korisnik")
             {
 
                 KorisnikModelView LoginKorisnika = new KorisnikModelView();
-                PovratnaPoruka p = LoginKorisnika.LoginKorisnika(textBox.Text, textBox1.Text);
-                if (p == PovratnaPoruka.LoginOK) this.Frame.Navigate(typeof(MainPage));
-                else if (p == PovratnaPoruka.PogresanUsername)
+                Greska greska = Validacija();
+                if (greska == Greska.OK)
                 {
-                    textBlock2.Text = p.ToString();
+                    PovratnaPoruka p = LoginKorisnika.LoginKorisnika(textBox.Text, passwordBox.Password);
+                    if (p == PovratnaPoruka.LoginOK) this.Frame.Navigate(typeof(MainPage));
+                    else if (p == PovratnaPoruka.PogresanUsername)
+                    {
+                        textBlock2.Text = p.ToString();
+                    }
+                    else if (p == PovratnaPoruka.PogresnaSifra)
+                    {
+                        textBlock2.Text = p.ToString();
+                    }
                 }
-                else if (p == PovratnaPoruka.PogresnaSifra)
-                {
-                    textBlock2.Text = p.ToString();
-                }
+                else textBlock.Text = greska.ToString();
+               
                 
 
             }
@@ -91,6 +94,13 @@ namespace KlixNightAdviser
 
             }
         }
+
+        private Greska Validacija()
+        {
+            if (textBox.Text == "") return Greska.PrazanUsername;
+            else if (passwordBox.Password == "") return Greska.PrazanPasword;
+            else return Greska.OK;
+        }
             
            
             
@@ -100,6 +110,16 @@ namespace KlixNightAdviser
             obj.tip = "korisnik";
             this.Frame.Navigate(typeof(Registracija));
             
+        }
+
+        private void Page_Loaded(object sender, RoutedEventArgs e)
+        {
+            textBlock.Text = "";
+        }
+
+        private void Page_DragEnter(object sender, DragEventArgs e)
+        {
+
         }
     }
 }

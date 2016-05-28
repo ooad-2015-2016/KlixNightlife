@@ -52,7 +52,13 @@ namespace KlixNightAdviser.AdviserBaza.ModelView
             for (int i=0; i<listaKorisnika.Count; i++)
                 if (listaKorisnika[i].KorisnickoIme==korisnicko_ime)
                 {
-                    if (listaKorisnika[i].Sifra == sifra) return PovratnaPoruka.LoginOK;
+                    if (listaKorisnika[i].Sifra == sifra) 
+                            {
+                        var obj = App.Current as App;
+                        obj.aktivanKorisnik= listaKorisnika[i];
+                        return PovratnaPoruka.LoginOK;
+                    }
+                            
                     else return PovratnaPoruka.PogresnaSifra;
                 }
             return PovratnaPoruka.PogresanUsername;

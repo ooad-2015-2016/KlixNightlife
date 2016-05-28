@@ -13,8 +13,7 @@ using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
 using KlixNightAdviser.AdviserBaza.ModelView;
-using KlixNightAdviser.AdviserBaza.Model;
-
+using KlixNightAdviser.AdviserBaza.View;
 // The Blank Page item template is documented at http://go.microsoft.com/fwlink/?LinkId=234238
 
 namespace KlixNightAdviser.AdviserBaza.View
@@ -22,33 +21,27 @@ namespace KlixNightAdviser.AdviserBaza.View
     /// <summary>
     /// An empty page that can be used on its own or navigated to within a Frame.
     /// </summary>
-    public sealed partial class DodavanjeObjekta : Page
+    public sealed partial class DodavanjeDogadjaja : Page
     {
-        public DodavanjeObjekta()
+        public DodavanjeDogadjaja()
         {
             this.InitializeComponent();
         }
 
-        private void button1_Click(object sender, RoutedEventArgs e)
+        private void textBox1_TextChanged(object sender, TextChangedEventArgs e)
         {
 
         }
 
         private void button_Click(object sender, RoutedEventArgs e)
         {
-            VlasnikModelView vlasnik = new VlasnikModelView();
+            //dodatiDogađaj
             var obj = App.Current as App;
-            
-            Objekat noviObjekat = new Objekat();
-            {
-                noviObjekat.Naziv = textBox.Text;
-                noviObjekat.Vlasnik = obj.aktivanVlasnik;
-                noviObjekat.Adresa = textBox1.Text;
-                noviObjekat.Mjesto = textBox2.Text;
-                noviObjekat.Tip = TipObjekta.Klub; //defaultno, pa cemo mjenjati
-            }
-            if (vlasnik.DodajObjekat(noviObjekat, obj.aktivanVlasnik))
-                this.Frame.Navigate(typeof(PregledVlasnika));
+            DogadjajModelView dodavanjeDogađaja = new DogadjajModelView();
+            DateTime datum = (DateTime)datePicker.DataContext;
+            DateTime vrijeme = (DateTime)timePicker.DataContext;
+            dodavanjeDogađaja.DodajDogađaj(textBox.Text, datum, vrijeme, obj.objekatPregled);
+            this.Frame.Navigate(typeof(UredjivanjeObjekta));
         }
     }
 }
