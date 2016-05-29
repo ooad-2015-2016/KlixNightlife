@@ -191,5 +191,15 @@ namespace KlixNightAdviser
             obj.objekatPregled = objekti[4];
             this.Frame.Navigate(typeof(PregledObjekta));
         }
+
+        private void button8_Click(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(KoristenjeEksternogUredjaja));
+        }
+
+        private void button9_Click(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(WebServis));
+        }
     }
 }
