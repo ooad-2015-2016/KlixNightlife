@@ -13,7 +13,11 @@
         <TextBlock x:Name="textBlock" HorizontalAlignment="Left" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Margin="141,193,0,0"/>
         <TextBlock x:Name="textBlock1" HorizontalAlignment="Left" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Margin="141,218,0,0"/>
         <TextBlock x:Name="textBlock2" HorizontalAlignment="Left" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Margin="141,243,0,0"/>
-        <TextBox x:Name="textBox" HorizontalAlignment="Left" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Margin="97,448,0,0" Height="39" Width="154"/>
+        <Button x:Name="button1" Content="Objavi" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="299,448,0,0" Height="39" Width="61" Click="button1_Click"/>
+        <ListBox x:Name="listBox" HorizontalAlignment="Left" Height="153" Margin="0,487,0,0" VerticalAlignment="Top" Width="360"/>
+        <ListBox x:Name="listBox1" HorizontalAlignment="Left" Height="140" Margin="0,308,0,0" VerticalAlignment="Top" Width="168"/>
+        <ListBox x:Name="listBox2" HorizontalAlignment="Left" Height="140" Margin="173,308,0,0" VerticalAlignment="Top" Width="187"/>
+        <TextBox x:Name="textBox" HorizontalAlignment="Left" Margin="0,448,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="299" Height="37" PlaceholderText="Unesite svoj komentar"/>
 
     </Grid>
 </Page>

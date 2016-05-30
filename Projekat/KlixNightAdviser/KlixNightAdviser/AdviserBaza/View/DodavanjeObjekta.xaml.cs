@@ -50,5 +50,15 @@ namespace KlixNightAdviser.AdviserBaza.View
             if (vlasnik.DodajObjekat(noviObjekat, obj.aktivanVlasnik))
                 this.Frame.Navigate(typeof(PregledVlasnika));
         }
+
+        private void button2_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void button1_Click_1(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(PregledVlasnika));
+        }
     }
 }

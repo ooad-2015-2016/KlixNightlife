@@ -38,9 +38,28 @@ namespace KlixNightAdviser.AdviserBaza.View
             //dodatiDogađaj
             var obj = App.Current as App;
             DogadjajModelView dodavanjeDogađaja = new DogadjajModelView();
-            DateTime datum = (DateTime)datePicker.DataContext;
-            DateTime vrijeme = (DateTime)timePicker.DataContext;
+            DateTime datum = datePicker.Date.Value.Date;
+            int sati = timePicker.Time.Hours;
+            int minute = timePicker.Time.Minutes;
+            DateTime vrijeme = new DateTime();
+            string vrijemeS = Convert.ToString(sati);
+            vrijemeS += ":" + Convert.ToString(minute);
+            vrijeme = Convert.ToDateTime(vrijeme);
+           
+            
+
             dodavanjeDogađaja.DodajDogađaj(textBox.Text, datum, vrijeme, obj.objekatPregled);
+            this.Frame.Navigate(typeof(UredjivanjeObjekta));
+        }
+
+        private void button1_Click(object sender, RoutedEventArgs e)
+        {
+            //provjeriti ima li sta uneseno, al ...
+            this.Frame.Navigate(typeof(UredjivanjeObjekta));
+        }
+
+        private void button1_Click_1(object sender, RoutedEventArgs e)
+        {
             this.Frame.Navigate(typeof(UredjivanjeObjekta));
         }
     }

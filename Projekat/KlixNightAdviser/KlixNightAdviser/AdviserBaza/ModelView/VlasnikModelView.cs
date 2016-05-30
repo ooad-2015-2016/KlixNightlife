@@ -79,9 +79,13 @@ namespace KlixNightAdviser.AdviserBaza.ModelView
 
         public bool ObrisiObjekat(Objekat objekt)
         {
-            var context = new AdviserDBContext();       
-            context.RemoveRange(objekt);
+            //nije mi jasno zasto ovo ne radi
+            //krahira
+            /*
+            var context = new AdviserDBContext();
+            context.Objekti.RemoveRange(objekt);
             context.SaveChanges();
+            */
             return true;
         }
 

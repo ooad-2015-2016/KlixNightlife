@@ -39,7 +39,7 @@ namespace KlixNightAdviser.AdviserBaza.ModelView
         {
             var context = new AdviserDBContext();
 
-            context.AddRange(korisnik);
+            context.Korisnici.AddRange(korisnik);
             context.SaveChanges();
 
             return true; 
@@ -62,6 +62,10 @@ namespace KlixNightAdviser.AdviserBaza.ModelView
                     else return PovratnaPoruka.PogresnaSifra;
                 }
             return PovratnaPoruka.PogresanUsername;
+        }
+        public void DodajKomentar(Objekat objekat, Korisnik korisnik, string tekstKomentara)
+        {
+
         }
 
         

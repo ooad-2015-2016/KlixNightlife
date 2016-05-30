@@ -9,18 +9,19 @@
     mc:Ignorable="d">
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-        <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="Wrap" Text="Dodajte novi objekat" VerticalAlignment="Top" RenderTransformOrigin="0.634,1.567"/>
-        <TextBox x:Name="textBox" HorizontalAlignment="Left" Margin="10,76,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="180" PlaceholderText="Naziv objekta"/>
-        <TextBox x:Name="textBox1" HorizontalAlignment="Left" Margin="10,116,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="180" PlaceholderText="Adresa"/>
-        <TextBox x:Name="textBox2" HorizontalAlignment="Left" Margin="10,156,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="180" PlaceholderText="Mjesto"/>
-        <ComboBox x:Name="comboBox" HorizontalAlignment="Left" Margin="10,193,0,0" VerticalAlignment="Top" Width="180" IsDropDownOpen="True">
+        <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Margin="10,70,0,0" TextWrapping="Wrap" Text="Dodajte novi objekat" VerticalAlignment="Top" RenderTransformOrigin="0.634,1.567"/>
+        <TextBox x:Name="textBox" HorizontalAlignment="Left" Margin="10,136,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="180" PlaceholderText="Naziv objekta"/>
+        <TextBox x:Name="textBox1" HorizontalAlignment="Left" Margin="10,176,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="180" PlaceholderText="Adresa"/>
+        <TextBox x:Name="textBox2" HorizontalAlignment="Left" Margin="10,216,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="180" PlaceholderText="Mjesto"/>
+        <ComboBox x:Name="comboBox" HorizontalAlignment="Left" Margin="10,253,0,0" VerticalAlignment="Top" Width="180" IsDropDownOpen="True">
             <ListBoxItem Content="Restoran"/>
             <ListBoxItem Content="Kafana"/>
             <ListBoxItem Content="Bistro"/>
             <ListBoxItem Content="Disco"/>
             <ListBoxItem Content="Bife"/>
-            
+
         </ComboBox>
         <Button x:Name="button" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="80,556,0,0" Width="189" Height="36" Content="Dodaj novi objekat" Click="button_Click"/>
+        <Button x:Name="button1" Content="Back" HorizontalAlignment="Left" VerticalAlignment="Top" Click="button1_Click_1"/>
     </Grid>
 </Page>

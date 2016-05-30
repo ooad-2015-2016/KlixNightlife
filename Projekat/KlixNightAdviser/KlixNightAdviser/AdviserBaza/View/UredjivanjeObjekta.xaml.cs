@@ -39,17 +39,10 @@ namespace KlixNightAdviser.AdviserBaza.View
             promjena = false;
             //ovo ne bi smjelo ovdje, al eto
             //treba prebaciti u modelview
-            var context = new AdviserDBContext();
-            List<Dogadjaj> sviDogađaji = context.Dogadjaji.ToList();
-            List<Dogadjaj> događajiObjekta = new List<Dogadjaj>();
-            for (int i = 0; i < sviDogađaji.Count(); i++)
-            {
-                if (sviDogađaji[i].ObjekatId == obj.objekatPregled.Id)
-                    događajiObjekta.Add(sviDogađaji[i]);
-            }
-            listBox.ItemsSource = događajiObjekta;
-
-            listBox1.ItemsSource= context.Clanci.ToList();
+            DogadjajModelView dogadjaji = new DogadjajModelView();
+            listBox.ItemsSource = dogadjaji.VratiDogađajeObjekta(obj.objekatPregled);
+            ClanakModelView clanak = new ClanakModelView();
+            listBox1.ItemsSource = clanak.VratiSveClanke();
 
         }
 
@@ -81,23 +74,45 @@ namespace KlixNightAdviser.AdviserBaza.View
 
         private void button1_Click(object sender, RoutedEventArgs e)
         {
-           
-            var obj = App.Current as App;
-            VlasnikModelView brisanjeObjekta = new VlasnikModelView();
-            brisanjeObjekta.ObrisiObjekat(obj.objekatPregled);
-            Objekat novi = new Objekat();
+           if (promjena)
             {
-                novi.Naziv = textBox.Text;
-                novi.Adresa = textBox2.Text;
-                novi.Mjesto = textBox3.Text;
-                novi.Vlasnik = obj.aktivanVlasnik;
-                novi.VlasnikId = obj.aktivanVlasnik.Id;
-                novi.GalerijaId = 1;
+                var obj = App.Current as App;
+                VlasnikModelView brisanjeObjekta = new VlasnikModelView();
+                brisanjeObjekta.ObrisiObjekat(obj.objekatPregled);
+                Objekat novi = new Objekat();
+                {
+                    novi.Naziv = textBox.Text;
+                    novi.Adresa = textBox2.Text;
+                    novi.Mjesto = textBox3.Text;
+                    novi.Vlasnik = obj.aktivanVlasnik;
+                    novi.VlasnikId = obj.aktivanVlasnik.Id;
+                    novi.GalerijaId = 1;
+                }
+                brisanjeObjekta.DodajObjekat(novi, obj.aktivanVlasnik);
             }
-            brisanjeObjekta.DodajObjekat(novi, obj.aktivanVlasnik);
+            
             this.Frame.Navigate(typeof(PregledVlasnika));
             
             
+        }
+
+        private void button2_Click(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(DodavanjeDogadjaja));
+        }
+
+        private void button3_Click(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(DodavanjeClanka));
+        }
+
+        private void button4_Click(object sender, RoutedEventArgs e)
+        {
+            //treba pitati jeste li sigurni, al sad za sad
+            VlasnikModelView vmv = new VlasnikModelView();
+            var obj = App.Current as App;
+            vmv.ObrisiObjekat(obj.objekatPregled);
+            Frame.Navigate(typeof(PregledVlasnika));
         }
     }
 }

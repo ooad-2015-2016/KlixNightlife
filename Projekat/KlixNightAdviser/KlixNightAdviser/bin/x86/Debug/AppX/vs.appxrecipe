@@ -22,13 +22,13 @@
     <AppXManifest Include="F:\OOAD\Projekat\KlixNightAdviser\KlixNightAdviser\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2016-05-28T13:10:39.478</Modified>
+      <Modified>2016-05-30T08:40:03.612</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="F:\OOAD\Projekat\KlixNightAdviser\KlixNightAdviser\bin\x86\Debug\KlixNightAdviser.exe">
       <PackagePath>entrypoint\KlixNightAdviser.exe</PackagePath>
-      <Modified>2016-05-28T13:10:32.582</Modified>
+      <Modified>2016-05-30T08:39:53.971</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\PC\.nuget\packages\EntityFramework.Core\7.0.0-beta6\lib\dotnet\EntityFramework.Core.dll">
       <PackagePath>EntityFramework.Core.dll</PackagePath>
@@ -582,7 +582,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="F:\OOAD\Projekat\KlixNightAdviser\KlixNightAdviser\bin\x86\Debug\KlixNightAdviser.xr.xml">
       <PackagePath>KlixNightAdviser.xr.xml</PackagePath>
-      <Modified>2016-05-28T13:10:29.779</Modified>
+      <Modified>2016-05-29T13:38:24.078</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
@@ -590,11 +590,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="F:\OOAD\Projekat\KlixNightAdviser\KlixNightAdviser\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2016-05-28T13:10:36.757</Modified>
+      <Modified>2016-05-30T08:40:00.723</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="F:\OOAD\Projekat\KlixNightAdviser\KlixNightAdviser\bin\x86\Debug\Core\KlixNightAdviser.exe">
       <PackagePath>KlixNightAdviser.exe</PackagePath>
-      <Modified>2016-05-28T13:10:39.470</Modified>
+      <Modified>2016-05-30T08:40:03.574</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

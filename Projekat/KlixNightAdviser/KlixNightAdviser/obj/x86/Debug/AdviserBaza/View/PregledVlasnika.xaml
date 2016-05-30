@@ -9,10 +9,11 @@
     mc:Ignorable="d"                     >
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" RenderTransformOrigin="0.067,0.408">
-        <TextBlock x:ConnectionId='2' x:Name="textBlock" HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="Wrap" Text="Dobrodošli" VerticalAlignment="Top"/>
-        <Button x:ConnectionId='3' x:Name="button" Content="Dodaj novi objekat" HorizontalAlignment="Left" Margin="10,105,0,0" VerticalAlignment="Top"                     />
-        <Button x:ConnectionId='4' x:Name="button1" Content="LogOut" HorizontalAlignment="Left" Margin="280,10,0,0" VerticalAlignment="Top"                       />
+        <TextBlock x:ConnectionId='2' x:Name="textBlock" HorizontalAlignment="Left" Margin="10,63,0,0" TextWrapping="Wrap" Text="Dobrodošli" VerticalAlignment="Top"/>
+        <Button x:ConnectionId='3' x:Name="button" Content="Dodaj novi objekat" HorizontalAlignment="Left" Margin="10,140,0,0" VerticalAlignment="Top"                     />
+        <Button x:ConnectionId='4' x:Name="button1" Content="LogOut" HorizontalAlignment="Left" Margin="290,0,0,0" VerticalAlignment="Top"                       />
         <ListBox x:ConnectionId='5' x:Name="listBox" HorizontalAlignment="Left" Height="228" VerticalAlignment="Top" Width="276" Margin="10,239,0,0"                                            />
+        <Button x:ConnectionId='6' x:Name="button2" Content="Početna" HorizontalAlignment="Left" VerticalAlignment="Top"                      />
 
     </Grid>
 </Page>

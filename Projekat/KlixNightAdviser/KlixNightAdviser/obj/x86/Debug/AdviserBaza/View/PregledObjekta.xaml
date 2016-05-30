@@ -13,7 +13,11 @@
         <TextBlock x:ConnectionId='4' x:Name="textBlock" HorizontalAlignment="Left" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Margin="141,193,0,0"/>
         <TextBlock x:ConnectionId='5' x:Name="textBlock1" HorizontalAlignment="Left" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Margin="141,218,0,0"/>
         <TextBlock x:ConnectionId='6' x:Name="textBlock2" HorizontalAlignment="Left" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Margin="141,243,0,0"/>
-        <TextBox x:ConnectionId='7' x:Name="textBox" HorizontalAlignment="Left" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Margin="97,448,0,0" Height="39" Width="154"/>
+        <Button x:ConnectionId='7' x:Name="button1" Content="Objavi" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="299,448,0,0" Height="39" Width="61"                      />
+        <ListBox x:ConnectionId='8' x:Name="listBox" HorizontalAlignment="Left" Height="153" Margin="0,487,0,0" VerticalAlignment="Top" Width="360"/>
+        <ListBox x:ConnectionId='9' x:Name="listBox1" HorizontalAlignment="Left" Height="140" Margin="0,308,0,0" VerticalAlignment="Top" Width="168"/>
+        <ListBox x:ConnectionId='10' x:Name="listBox2" HorizontalAlignment="Left" Height="140" Margin="173,308,0,0" VerticalAlignment="Top" Width="187"/>
+        <TextBox x:ConnectionId='11' x:Name="textBox" HorizontalAlignment="Left" Margin="0,448,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="299" Height="37" PlaceholderText="Unesite svoj komentar"/>
 
     </Grid>
 </Page>

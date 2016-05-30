@@ -19,6 +19,7 @@
         <Button x:ConnectionId='8' x:Name="button5" Content="Button" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="188,249,0,0" Height="81" Width="102" RequestedTheme="Light" Background="#33CF2F2F"                      />
         <Button x:ConnectionId='9' x:Name="button6" Content="Button" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="49,391,0,0" Height="81" Width="102" RequestedTheme="Light" Background="#33CF2F2F"                      />
         <Button x:ConnectionId='10' x:Name="button7" Content="Button" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="188,391,0,0" Height="81" Width="102" RequestedTheme="Light" Background="#33CF2F2F"                      />
+        <Button x:ConnectionId='11' x:Name="button8" Content="LogOut" HorizontalAlignment="Left" VerticalAlignment="Top"                        />
     </Grid>
 </Page>
 

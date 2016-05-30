@@ -83,7 +83,19 @@ namespace KlixNightAdviser
             }
             //dodati u bazu, za ne daj boze :)
             // da ne kucamo na casu 
-
+            var obj = App.Current as App;
+            if (obj.aktivanVlasnik != null)
+            {
+                button.Visibility = Visibility.Collapsed;
+                button1.Visibility = Visibility.Collapsed;
+                button8.Visibility = Visibility.Visible;
+            }
+            else
+            {
+                button8.Visibility = Visibility.Collapsed;
+            }
+            var context = new AdviserDBContext();
+            objekti = context.Objekti.ToList();
         }
 
 
@@ -146,7 +158,19 @@ namespace KlixNightAdviser
             {
                 lista[i].Content = objekti[i].Naziv;
             }
-
+            var obj = App.Current as App;
+            if (obj.aktivanVlasnik != null || obj.aktivanKorisnik !=null)
+            {
+                button.Visibility = Visibility.Collapsed;
+                button1.Visibility = Visibility.Collapsed;
+                button8.Visibility = Visibility.Visible;
+            }
+            else
+            {
+                button8.Visibility = Visibility.Collapsed;
+                button.Visibility = Visibility.Visible;
+                button1.Visibility = Visibility.Visible;
+            }
         }
 
         private void button2_Click(object sender, RoutedEventArgs e)
@@ -190,6 +214,30 @@ namespace KlixNightAdviser
             var obj = App.Current as App;
             obj.objekatPregled = objekti[4];
             this.Frame.Navigate(typeof(PregledObjekta));
+        }
+
+        private void button8_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void button8_Click_1(object sender, RoutedEventArgs e)
+        {
+            var obj = App.Current as App;
+            obj.aktivanVlasnik = null;
+            obj.aktivanKorisnik = null;
+            if (obj.aktivanVlasnik != null || obj.aktivanKorisnik != null)
+            {
+                button.Visibility = Visibility.Collapsed;
+                button1.Visibility = Visibility.Collapsed;
+                button8.Visibility = Visibility.Visible;
+            }
+            else
+            {
+                button8.Visibility = Visibility.Collapsed;
+                button.Visibility = Visibility.Visible;
+                button1.Visibility = Visibility.Visible;
+            }
         }
     }
 }
