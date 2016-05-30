@@ -95,6 +95,8 @@
     <None Include="project.json" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AdviserBaza\Helper\ObjekatWebServis.cs" />
+    <Compile Include="AdviserBaza\Helper\Rfid.cs" />
     <Compile Include="AdviserBaza\ModelView\ClanakModelView.cs" />
     <Compile Include="AdviserBaza\ModelView\DogadjajModelView.cs" />
     <Compile Include="AdviserBaza\ModelView\KomentarModelView.cs" />
@@ -121,6 +123,9 @@
     <Compile Include="AdviserBaza\View\DodavanjeObjekta.xaml.cs">
       <DependentUpon>DodavanjeObjekta.xaml</DependentUpon>
     </Compile>
+    <Compile Include="AdviserBaza\View\KoristenjeEksternogUredjaja.xaml.cs">
+      <DependentUpon>KoristenjeEksternogUredjaja.xaml</DependentUpon>
+    </Compile>
     <Compile Include="AdviserBaza\View\PregledObjekta.xaml.cs">
       <DependentUpon>PregledObjekta.xaml</DependentUpon>
     </Compile>
@@ -129,6 +134,9 @@
     </Compile>
     <Compile Include="AdviserBaza\View\UredjivanjeObjekta.xaml.cs">
       <DependentUpon>UredjivanjeObjekta.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="AdviserBaza\View\WebServis.xaml.cs">
+      <DependentUpon>WebServis.xaml</DependentUpon>
     </Compile>
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
@@ -182,6 +190,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="AdviserBaza\View\KoristenjeEksternogUredjaja.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="AdviserBaza\View\Login.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -203,6 +215,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="AdviserBaza\View\UredjivanjeObjekta.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="AdviserBaza\View\WebServis.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
