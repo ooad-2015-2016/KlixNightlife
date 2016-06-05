@@ -40,105 +40,104 @@ namespace KlixNightAdviser.AdviserBaza.View
 
         public async Task getAtributes(string naziv ,string token)
         {
-            HttpClient httpClient = new HttpClient();
-            string uriString = "https://graph.facebook.com/search?q=" + naziv + "&type=place&access_token=" + token;
-            string response = await httpClient.GetStringAsync(new Uri(uriString));
-            JsonObject value = JsonValue.Parse(response).GetObject();
+                HttpClient httpClient = new HttpClient();
+                string uriString = "https://graph.facebook.com/search?q=" + naziv + "&type=place&access_token=" + token;
+                string response = await httpClient.GetStringAsync(new Uri(uriString));
+                JsonObject value = JsonValue.Parse(response).GetObject();
 
-            var objektiWebServis = new List<ObjekatWebServis>();
+                var objektiWebServis = new List<ObjekatWebServis>();
 
-            JsonArray jsonObjekti = value.GetNamedArray("data");
+                JsonArray jsonObjekti = value.GetNamedArray("data");
 
             //var objekatWebServis = new ObjekatWebServis();
 
-            string pomocnaZaAdresu = "";
 
-            for (uint i = 0; i < jsonObjekti.Count; i++)
-            {
-                IJsonValue jsonValue;
+                string pomocnaZaAdresu = "";
 
-                var objekatWebServis = new ObjekatWebServis();
-
-                if (jsonObjekti.GetObjectAt(i).TryGetValue("name", out jsonValue))
+                for (uint i = 0; i < jsonObjekti.Count; i++)
                 {
-                    objekatWebServis.Ime = jsonValue.GetString();
-                }
+                    IJsonValue jsonValue;
 
-                var location = jsonObjekti.GetObjectAt(i).GetNamedObject("location");
+                    var objekatWebServis = new ObjekatWebServis();
 
-                if (location.GetObject().TryGetValue("street", out jsonValue))
-                {
-                    pomocnaZaAdresu = jsonValue.GetString();
-                }
+                    if (jsonObjekti.GetObjectAt(i).TryGetValue("name", out jsonValue))
+                    {
+                        objekatWebServis.Ime = jsonValue.GetString();
+                    }
 
-                if (location.GetObject().TryGetValue("zip", out jsonValue))
-                {
-                    pomocnaZaAdresu += "\n" + jsonValue.GetString();
-                }
+                    var location = jsonObjekti.GetObjectAt(i).GetNamedObject("location");
 
-                if (location.GetObject().TryGetValue("city", out jsonValue))
-                {
-                    pomocnaZaAdresu += " " + jsonValue.GetString();
-                }
+                    if (location.GetObject().TryGetValue("street", out jsonValue))
+                    {
+                        pomocnaZaAdresu = jsonValue.GetString();
+                    }
 
-                if (location.GetObject().TryGetValue("country", out jsonValue))
-                {
-                    pomocnaZaAdresu += "\n" + jsonValue.GetString();
-                }
+                    if (location.GetObject().TryGetValue("zip", out jsonValue))
+                    {
+                        pomocnaZaAdresu += "\n" + jsonValue.GetString();
+                    }
 
-                objekatWebServis.Adresa = pomocnaZaAdresu;
+                    if (location.GetObject().TryGetValue("city", out jsonValue))
+                    {
+                        pomocnaZaAdresu += " " + jsonValue.GetString();
+                    }
 
-                var id = jsonObjekti.GetObjectAt(i).GetNamedString("id");
+                    if (location.GetObject().TryGetValue("country", out jsonValue))
+                    {
+                        pomocnaZaAdresu += "\n" + jsonValue.GetString();
+                    }
 
-                objekatWebServis.Id = id;
+                    objekatWebServis.Adresa = pomocnaZaAdresu;
 
+                    var id = jsonObjekti.GetObjectAt(i).GetNamedString("id");
+
+                    objekatWebServis.Id = id;
                 
 
+                    objektiWebServis.Add(objekatWebServis);
 
-                objektiWebServis.Add(objekatWebServis);
+                    if (i == 4 || i == (jsonObjekti.Count - 1))
+                        break;
 
-                if (i == 4 || i == (jsonObjekti.Count - 1))
-                    break;
-
-            }
-
-            foreach (var objekatWebServis in objektiWebServis)
-            {
-                string stringZaId = "https://graph.facebook.com/" + objekatWebServis.Id +"?q=iwatch&access_token=EAACEdEose0cBALNGuduF9LkxjN3G8y0X53ZBSrPTZCcRojiLp4RpSOjoKEo4ALymOnSZB5zlMTgHKoxZBVDd7vTHA6mf6ebpeR1yjUfVR1WZCmefvxtZCHCZCZAWsCWaD9CPJ9uvJGiZBIcX1KXgpY1xx4JEZBcNay367z94yuG0b1lAZDZD";
-                string responseZaId = await httpClient.GetStringAsync(new Uri(stringZaId));
-                JsonObject valueZaId = JsonValue.Parse(responseZaId).GetObject();
-
-                IJsonValue jsonValue;
-
-                if (valueZaId.GetObject().TryGetValue("likes", out jsonValue))
-                {
-                    objekatWebServis.BrojLikeova = jsonValue.GetNumber();
                 }
-                if (valueZaId.GetObject().TryGetValue("checkins", out jsonValue))
+
+                foreach (var objekatWebServis in objektiWebServis)
                 {
-                    objekatWebServis.BrojCheckinova = jsonValue.GetNumber();
+                    string stringZaId = "https://graph.facebook.com/" + objekatWebServis.Id +"?q=iwatch&access_token=" + token;
+                    string responseZaId = await httpClient.GetStringAsync(new Uri(stringZaId));
+                    JsonObject valueZaId = JsonValue.Parse(responseZaId).GetObject();
+
+                    IJsonValue jsonValue;
+
+                    if (valueZaId.GetObject().TryGetValue("likes", out jsonValue))
+                    {
+                        objekatWebServis.BrojLikeova = jsonValue.GetNumber();
+                    }
+                    if (valueZaId.GetObject().TryGetValue("checkins", out jsonValue))
+                    {
+                        objekatWebServis.BrojCheckinova = jsonValue.GetNumber();
+                    }
                 }
-            }
             
 
-            var ispisi = new List<string>();
+                var ispisi = new List<string>();
 
-            foreach (var objekatWebServis in objektiWebServis)
-            {
-                ispisi.Add("Naziv: " + objekatWebServis.Ime + "\n" +
-                           "Adresa: " + "\n" + objekatWebServis.Adresa + "\n" +
-                           "Broj lajkova: " + objekatWebServis.BrojLikeova.ToString() + "\n" +
-                           "Broj checkIn-ova: " + objekatWebServis.BrojCheckinova.ToString() + "\n"
-                          );
-            }
+                foreach (var objekatWebServis in objektiWebServis)
+                {
+                    ispisi.Add("Naziv: " + objekatWebServis.Ime + "\n" +
+                               "Adresa: " + "\n" + objekatWebServis.Adresa + "\n" +
+                               "Broj lajkova: " + objekatWebServis.BrojLikeova.ToString() + "\n" +
+                               "Broj checkIn-ova: " + objekatWebServis.BrojCheckinova.ToString() + "\n"
+                              );
+                }
 
-            string ispis = "";
+                string ispis = "";
 
-            foreach (var item in ispisi)
-                ispis += item + "\n\n";
+                foreach (var item in ispisi)
+                    ispis += item + "\n\n";
 
 
-            textBlock.Text = ispis;
+                textBlock.Text = ispis;
 
             }
 

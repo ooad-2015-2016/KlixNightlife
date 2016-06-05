@@ -22,13 +22,13 @@
     <AppXManifest Include="C:\finalni\KlixNightlife\Projekat\KlixNightAdviser\KlixNightAdviser\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2016-05-29T12:07:16.441</Modified>
+      <Modified>2016-05-30T10:54:21.984</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\finalni\KlixNightlife\Projekat\KlixNightAdviser\KlixNightAdviser\bin\x86\Debug\KlixNightAdviser.exe">
       <PackagePath>entrypoint\KlixNightAdviser.exe</PackagePath>
-      <Modified>2016-05-29T12:07:13.335</Modified>
+      <Modified>2016-05-30T10:54:20.469</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Nermin Imamovic\.nuget\packages\EntityFramework.Core\7.0.0-beta6\lib\dotnet\EntityFramework.Core.dll">
       <PackagePath>EntityFramework.Core.dll</PackagePath>
@@ -594,7 +594,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\finalni\KlixNightlife\Projekat\KlixNightAdviser\KlixNightAdviser\bin\x86\Debug\Core\KlixNightAdviser.exe">
       <PackagePath>KlixNightAdviser.exe</PackagePath>
-      <Modified>2016-05-29T12:07:16.438</Modified>
+      <Modified>2016-05-30T10:54:21.974</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>
