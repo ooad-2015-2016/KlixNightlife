@@ -19,11 +19,8 @@
         <Button x:Name="button5" Content="Button" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="188,249,0,0" Height="81" Width="102" RequestedTheme="Light" Background="#33CF2F2F" Click="button5_Click"/>
         <Button x:Name="button6" Content="Button" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="49,391,0,0" Height="81" Width="102" RequestedTheme="Light" Background="#33CF2F2F" Click="button6_Click"/>
         <Button x:Name="button7" Content="Button" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="188,391,0,0" Height="81" Width="102" RequestedTheme="Light" Background="#33CF2F2F" Click="button7_Click"/>
-<<<<<<< HEAD
         <Button x:Name="button8" Content="LogOut" HorizontalAlignment="Left" VerticalAlignment="Top" Click="button8_Click_1"/>
-=======
-        <Button x:Name="button8" Content="Kartica" HorizontalAlignment="Left" Margin="49,505,0,0" VerticalAlignment="Top" Width="102" Click="button8_Click"/>
-        <Button x:Name="button9" Content="Web Servis" HorizontalAlignment="Left" Margin="188,505,0,0" VerticalAlignment="Top" Width="102" Click="button9_Click"/>
->>>>>>> origin/master
+        <Button x:Name="button10" Content="Kartica" HorizontalAlignment="Left" Margin="49,505,0,0" VerticalAlignment="Top" Width="102" Click="button8_Click"/>
+        <Button x:Name="button11" Content="Web Servis" HorizontalAlignment="Left" Margin="188,505,0,0" VerticalAlignment="Top" Width="102" Click="button9_Click"/>
     </Grid>
 </Page>

@@ -9,9 +9,14 @@
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
+        <CaptureElement Name="PreviewControl" Source="{Binding Path=Camera.MediaCapture,Mode=TwoWay}" Stretch="Uniform"  Grid.Row="5"/>
+        <Image Name="SlikaControl" HorizontalAlignment="Center" Margin="5,5,5,5" VerticalAlignment="Center"  Source="{Binding Slika}" Grid.Row="5" Grid.Column="1"/>
+        <Button Content="Uslikaj" HorizontalAlignment="Stretch" Margin="10,325,0,0" VerticalAlignment="Top" Command="{Binding Path=Uslikaj}" />
+
         <TextBlock Text="KreditnaKartica:" Height="28" HorizontalAlignment="Stretch" Margin="0,382,10,0" VerticalAlignment="Top" />
         <StackPanel>
-            <PasswordBox x:Name="passwordBox" Password="{Binding Path=CreateUposlenik.KreditnaKartica,Mode=TwoWay}"  Margin="0,380.568,17,0" VerticalAlignment="Top" Height="32.112" RenderTransformOrigin="0.5,0.5" Width="200" MaxLength="16"
+
+            <PasswordBox x:Name="passwordBox" Password="{Binding CreateUposlenik.KreditnaKartica, Mode=TwoWay}"  Margin="0,380.568,17,0" VerticalAlignment="Top" Height="32.112" RenderTransformOrigin="0.61,-6.427" Width="200" MaxLength="16"
              PasswordChanged="passwordBox_PasswordChanged" HorizontalAlignment="Right"/>
 
             <TextBlock x:Name="statusText" Margin="10" HorizontalAlignment="Center" />

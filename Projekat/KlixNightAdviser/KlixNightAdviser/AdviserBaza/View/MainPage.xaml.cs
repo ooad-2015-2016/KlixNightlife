@@ -218,7 +218,6 @@ namespace KlixNightAdviser
 
         private void button8_Click(object sender, RoutedEventArgs e)
         {
-<<<<<<< HEAD
 
         }
 
@@ -239,14 +238,12 @@ namespace KlixNightAdviser
                 button.Visibility = Visibility.Visible;
                 button1.Visibility = Visibility.Visible;
             }
-=======
             this.Frame.Navigate(typeof(KoristenjeEksternogUredjaja));
         }
 
         private void button9_Click(object sender, RoutedEventArgs e)
         {
             this.Frame.Navigate(typeof(WebServis));
->>>>>>> origin/master
         }
     }
 }

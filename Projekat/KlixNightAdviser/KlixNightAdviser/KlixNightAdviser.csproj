@@ -95,6 +95,7 @@
     <None Include="project.json" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AdviserBaza\Helper\CameraHelper.cs" />
     <Compile Include="AdviserBaza\Helper\ObjekatWebServis.cs" />
     <Compile Include="AdviserBaza\Helper\Rfid.cs" />
     <Compile Include="AdviserBaza\ModelView\ClanakModelView.cs" />
