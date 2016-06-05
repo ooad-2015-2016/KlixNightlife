@@ -20,6 +20,18 @@
       <RootProperty Name="AllowDrop" />
     </RootType>
     <RootType FullName="Microsoft.Xaml.DirectUI.ProxyTypes.ThemeResourceExtension" />
+    <RootType FullName="Windows.UI.Xaml.Controls.Button">
+      <RootProperty Name="Content" />
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="Margin" />
+      <RootProperty Name="Width" />
+      <RootProperty Name="Height" />
+      <RootProperty Name="RequestedTheme" />
+      <RootProperty Name="Background" />
+      <RootProperty Name="RenderTransformOrigin" />
+      <RootEvent Name="Click" />
+    </RootType>
     <RootType FullName="KlixNightAdviser.AdviserBaza.View.DodavanjeClanka" />
     <RootType FullName="Windows.UI.Xaml.Controls.TextBox">
       <RootProperty Name="HorizontalAlignment" />
@@ -46,18 +58,6 @@
     <RootType FullName="Windows.UI.Xaml.Automation.AutomationProperties">
       <RootMethod Name="GetHelpText" />
       <RootMethod Name="SetHelpText" />
-    </RootType>
-    <RootType FullName="Windows.UI.Xaml.Controls.Button">
-      <RootProperty Name="Content" />
-      <RootProperty Name="HorizontalAlignment" />
-      <RootProperty Name="Margin" />
-      <RootProperty Name="VerticalAlignment" />
-      <RootProperty Name="Width" />
-      <RootProperty Name="Height" />
-      <RootProperty Name="RequestedTheme" />
-      <RootProperty Name="Background" />
-      <RootProperty Name="RenderTransformOrigin" />
-      <RootEvent Name="Click" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.TextBlock">
       <RootProperty Name="HorizontalAlignment" />
@@ -127,15 +127,15 @@
       <RootProperty Name="Source" />
       <RootProperty Name="Stretch" />
     </RootType>
-    <RootType FullName="KlixNightAdviser.AdviserBaza.View.PregledObjekta" />
     <RootType FullName="Windows.UI.Xaml.Controls.ListBox">
       <RootProperty Name="HorizontalAlignment" />
       <RootProperty Name="Height" />
+      <RootProperty Name="Margin" />
       <RootProperty Name="VerticalAlignment" />
       <RootProperty Name="Width" />
-      <RootProperty Name="Margin" />
       <RootEvent Name="SelectionChanged" />
     </RootType>
+    <RootType FullName="KlixNightAdviser.AdviserBaza.View.PregledObjekta" />
     <RootType FullName="KlixNightAdviser.AdviserBaza.View.PregledVlasnika" />
     <RootType FullName="Windows.UI.Xaml.Controls.ComboBoxItem">
       <RootProperty Name="Content" />
@@ -144,6 +144,7 @@
       <RootProperty Name="Rotation" />
       <RootProperty Name="TranslateX" />
       <RootProperty Name="TranslateY" />
+      <RootProperty Name="SkewX" />
     </RootType>
     <RootType FullName="KlixNightAdviser.Registracija" />
     <RootType FullName="KlixNightAdviser.AdviserBaza.View.UredjivanjeObjekta" />

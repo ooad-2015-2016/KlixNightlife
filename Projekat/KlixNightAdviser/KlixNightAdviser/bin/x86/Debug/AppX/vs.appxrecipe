@@ -22,13 +22,29 @@
     <AppXManifest Include="C:\finalni\KlixNightlife\Projekat\KlixNightAdviser\KlixNightAdviser\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+<<<<<<< HEAD
       <Modified>2016-05-30T10:54:21.984</Modified>
+=======
+<<<<<<< HEAD
+      <Modified>2016-05-30T08:40:03.612</Modified>
+=======
+      <Modified>2016-05-29T12:07:16.441</Modified>
+>>>>>>> origin/master
+>>>>>>> 307e9750d515c0b83c3d18b5b5e7a7dac237d693
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\finalni\KlixNightlife\Projekat\KlixNightAdviser\KlixNightAdviser\bin\x86\Debug\KlixNightAdviser.exe">
       <PackagePath>entrypoint\KlixNightAdviser.exe</PackagePath>
+<<<<<<< HEAD
       <Modified>2016-05-30T10:54:20.469</Modified>
+=======
+<<<<<<< HEAD
+      <Modified>2016-05-30T08:39:53.971</Modified>
+=======
+      <Modified>2016-05-29T12:07:13.335</Modified>
+>>>>>>> origin/master
+>>>>>>> 307e9750d515c0b83c3d18b5b5e7a7dac237d693
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Nermin Imamovic\.nuget\packages\EntityFramework.Core\7.0.0-beta6\lib\dotnet\EntityFramework.Core.dll">
       <PackagePath>EntityFramework.Core.dll</PackagePath>
@@ -582,7 +598,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\finalni\KlixNightlife\Projekat\KlixNightAdviser\KlixNightAdviser\bin\x86\Debug\KlixNightAdviser.xr.xml">
       <PackagePath>KlixNightAdviser.xr.xml</PackagePath>
+<<<<<<< HEAD
+      <Modified>2016-05-29T13:38:24.078</Modified>
+=======
       <Modified>2016-05-29T12:07:09.922</Modified>
+>>>>>>> origin/master
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
@@ -590,11 +610,23 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\finalni\KlixNightlife\Projekat\KlixNightAdviser\KlixNightAdviser\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
+<<<<<<< HEAD
+      <Modified>2016-05-30T08:40:00.723</Modified>
+=======
       <Modified>2016-05-29T12:07:15.388</Modified>
+>>>>>>> origin/master
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\finalni\KlixNightlife\Projekat\KlixNightAdviser\KlixNightAdviser\bin\x86\Debug\Core\KlixNightAdviser.exe">
       <PackagePath>KlixNightAdviser.exe</PackagePath>
+<<<<<<< HEAD
       <Modified>2016-05-30T10:54:21.974</Modified>
+=======
+<<<<<<< HEAD
+      <Modified>2016-05-30T08:40:03.574</Modified>
+=======
+      <Modified>2016-05-29T12:07:16.438</Modified>
+>>>>>>> origin/master
+>>>>>>> 307e9750d515c0b83c3d18b5b5e7a7dac237d693
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

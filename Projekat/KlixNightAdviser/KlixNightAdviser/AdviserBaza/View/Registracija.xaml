@@ -8,39 +8,40 @@
     mc:Ignorable="d">
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" AllowDrop="True">
-        <TextBox x:Name="textBox" HorizontalAlignment="Left" Margin="26,20.626,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="139.676" RenderTransformOrigin="0.638,0.271" UseLayoutRounding="False" d:LayoutRounding="Auto" PlaceholderText="Korisnicko ime">
+        <TextBox x:Name="textBox" HorizontalAlignment="Left" Margin="20,65,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="300" RenderTransformOrigin="0.638,0.271" UseLayoutRounding="False" d:LayoutRounding="Auto" PlaceholderText="Korisnicko ime">
             <TextBox.RenderTransform>
-                <CompositeTransform Rotation="0.076" TranslateX="0.132" TranslateY="0.111"/>
+                <CompositeTransform Rotation="0.035" TranslateX="0.132" TranslateY="0.111" SkewX="-0.129"/>
             </TextBox.RenderTransform>
         </TextBox>
-        <TextBox x:Name="textBox2" HorizontalAlignment="Left" Margin="186,58.634,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="139.676" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto" PlaceholderText="eMail">
+        <TextBox x:Name="textBox2" HorizontalAlignment="Left" Margin="20,175.966,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="300" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto" PlaceholderText="eMail">
             <TextBox.RenderTransform>
-                <CompositeTransform Rotation="0.076" TranslateX="0.024" TranslateY="0.077"/>
+                <CompositeTransform Rotation="0.035" TranslateX="0.024" TranslateY="0.077" SkewX="-0.129"/>
             </TextBox.RenderTransform>
         </TextBox>
-        <TextBox x:Name="textBox3" HorizontalAlignment="Left" Margin="186,100.3,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="139.676" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto" PlaceholderText="Broj telefona">
+        <TextBox x:Name="textBox3" HorizontalAlignment="Left" Margin="20,216.299,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="300" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto" PlaceholderText="Broj telefona">
             <TextBox.RenderTransform>
-                <CompositeTransform Rotation="0.076" TranslateX="-0.123" TranslateY="0.077"/>
+                <CompositeTransform Rotation="0.035" TranslateX="-0.123" TranslateY="0.077" SkewX="-0.129"/>
             </TextBox.RenderTransform>
         </TextBox>
-        <TextBox x:Name="textBox4" HorizontalAlignment="Left" Margin="184,21.967,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="139.676" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto" PlaceholderText="Ime i Prezime">
+        <TextBox x:Name="textBox4" HorizontalAlignment="Left" Margin="20,139.295,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="300" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto" PlaceholderText="Ime i Prezime">
             <TextBox.RenderTransform>
-                <CompositeTransform Rotation="0.076" TranslateX="-0.074" TranslateY="0.077"/>
+                <CompositeTransform Rotation="0.035" TranslateX="-0.074" TranslateY="0.077" SkewX="-0.129"/>
             </TextBox.RenderTransform>
         </TextBox>
-        <TextBox x:Name="textBox5" HorizontalAlignment="Left" Margin="26,98.301,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="141.662" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto" PlaceholderText="Adresa">
+        <TextBox x:Name="textBox5" HorizontalAlignment="Left" Margin="20,251.634,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="300" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto" PlaceholderText="Adresa">
             <TextBox.RenderTransform>
-                <CompositeTransform Rotation="0.076" TranslateX="-0.025" TranslateY="0.077"/>
+                <CompositeTransform Rotation="0.035" TranslateX="-0.025" TranslateY="0.077" SkewX="-0.129"/>
             </TextBox.RenderTransform>
         </TextBox>
-        <ComboBox x:Name="comboBox" HorizontalAlignment="Left" Margin="26,140,0,0" VerticalAlignment="Top" Width="137" PlaceholderText="Spol">
+        <ComboBox x:Name="comboBox" HorizontalAlignment="Left" Margin="20,286,0,0" VerticalAlignment="Top" Width="300" PlaceholderText="Spol">
             <ComboBoxItem Content="zenski"/>
             <ComboBoxItem Content="muski"/>
         </ComboBox>
-        <Button x:Name="button" Content="Done" HorizontalAlignment="Left" Margin="166,552,0,0" VerticalAlignment="Top" Width="157" Click="button_Click"/>
-        <PasswordBox x:Name="passwordBox" HorizontalAlignment="Left" VerticalAlignment="Top" RenderTransformOrigin="2.25,9.125" Margin="27,58,0,0" Width="137" PlaceholderText="Lozinka"/>
-        <TextBlock x:Name="textBlock1" HorizontalAlignment="Left" Margin="27,214,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top"/>
-        <CalendarDatePicker HorizontalAlignment="Left" VerticalAlignment="Top" Margin="27,182,0,0" PlaceholderText="Izaberite datum rođenja"/>
+        <Button x:Name="button" Content="Done" HorizontalAlignment="Left" Margin="100,557,0,0" VerticalAlignment="Top" Width="157" Click="button_Click"/>
+        <PasswordBox x:Name="passwordBox" HorizontalAlignment="Left" VerticalAlignment="Top" RenderTransformOrigin="2.25,9.125" Margin="22,103,0,0" Width="300" PlaceholderText="Lozinka"/>
+        <TextBlock x:Name="textBlock1" HorizontalAlignment="Left" Margin="20,360,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top"/>
+        <CalendarDatePicker HorizontalAlignment="Left" VerticalAlignment="Top" Margin="20,323,0,0" PlaceholderText="Izaberite datum rođenja" Width="300"/>
+        <Button x:Name="button1" Content="Back" HorizontalAlignment="Left" VerticalAlignment="Top" Click="button1_Click_1"/>
 
     </Grid>
 </Page>

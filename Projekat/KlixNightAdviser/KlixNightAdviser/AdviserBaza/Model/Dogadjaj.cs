@@ -20,5 +20,10 @@ namespace KlixNightAdviser.AdviserBaza.Model
         public int ObjekatId { get; set; }
 
         public virtual Objekat Objekat { get; set; }
+
+        public override string ToString()
+        {
+            return Naziv + " " + Datum.Date.ToString() + " " + Vrijeme.TimeOfDay.ToString();
+        }
     }
 }

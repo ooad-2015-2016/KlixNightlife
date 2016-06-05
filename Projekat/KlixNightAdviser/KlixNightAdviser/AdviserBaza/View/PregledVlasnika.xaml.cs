@@ -29,6 +29,7 @@ namespace KlixNightAdviser.AdviserBaza.View
             this.InitializeComponent();
             var obj = App.Current as App;
             textBlock.Text = "Dobrodošli " + obj.aktivanVlasnik.Ime;
+            
         }
 
         private void listBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
@@ -67,6 +68,11 @@ namespace KlixNightAdviser.AdviserBaza.View
                     
             }
             listBox.ItemsSource = objektiVlasnika; 
+        }
+
+        private void button2_Click(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(MainPage));
         }
     }
 }

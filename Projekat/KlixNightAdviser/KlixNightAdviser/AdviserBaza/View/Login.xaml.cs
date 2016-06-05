@@ -31,6 +31,11 @@ namespace KlixNightAdviser
         {
             this.InitializeComponent();
             textBlock2.Text = "";
+            var obj = App.Current as App;
+            if (obj.tip == "vlasnik") button1.Visibility = Visibility.Collapsed;
+           
+                
+
         }
 
         private void button_Click(object sender, RoutedEventArgs e)
@@ -38,12 +43,8 @@ namespace KlixNightAdviser
             var obj = App.Current as App;
             if (obj.tip == "vlasnik")
             {
+                //Ubaciti validaciju
                 VlasnikModelView vmv = new VlasnikModelView();
-                //trazi u bazi ima li vlasnika
-                //predpostavicemo da je login uspio
-                //kad login uspije, zapamtimo koji nam je to aktivanVlasnik
-                //sad cemo napraviti nekog zamisljenog vlasnika
-                //i reci da je on aktivan
                 PovratnaPoruka poruka = vmv.LoginVlasnika(textBox.Text, passwordBox.Password);
                 if (poruka==PovratnaPoruka.LoginOK)
                 {
@@ -54,11 +55,6 @@ namespace KlixNightAdviser
                 {
                     textBlock2.Text = poruka.ToString();
                 }
-
-                //vodi ga na novu formu
-                //u kojoj on ima pregled svojih objekata 
-
-
 
             }
             else if (obj.tip == "korisnik")
@@ -114,12 +110,17 @@ namespace KlixNightAdviser
 
         private void Page_Loaded(object sender, RoutedEventArgs e)
         {
-            textBlock.Text = "";
+            textBlock2.Text = "";
         }
 
         private void Page_DragEnter(object sender, DragEventArgs e)
         {
 
+        }
+
+        private void button2_Click(object sender, RoutedEventArgs e)
+        {
+            Frame.Navigate(typeof(MainPage));
         }
     }
 }

@@ -99,6 +99,7 @@
     <Compile Include="AdviserBaza\Helper\Rfid.cs" />
     <Compile Include="AdviserBaza\ModelView\ClanakModelView.cs" />
     <Compile Include="AdviserBaza\ModelView\DogadjajModelView.cs" />
+    <Compile Include="AdviserBaza\ModelView\KomentarModelView.cs" />
     <Compile Include="AdviserBaza\ModelView\KorisnikModelView.cs" />
     <Compile Include="AdviserBaza\ModelView\VlasnikModelView.cs" />
     <Compile Include="AdviserBaza\Model\AdviserDBContext.cs" />

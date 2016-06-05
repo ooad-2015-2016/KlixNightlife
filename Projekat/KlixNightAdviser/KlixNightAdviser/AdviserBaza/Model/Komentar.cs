@@ -21,6 +21,11 @@ namespace KlixNightAdviser.AdviserBaza.Model
         public virtual Objekat Objekat { get; set; }
         public virtual Clanak Clanak { get; set; }
 
+        public override string ToString()
+        {
+            return TekstKomentara + " " + Korisnik.KorisnickoIme;
+        }
+
 
     }
 }

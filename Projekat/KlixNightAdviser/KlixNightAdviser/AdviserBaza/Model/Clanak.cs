@@ -20,5 +20,10 @@ namespace KlixNightAdviser.AdviserBaza.Model
         public virtual Galerija Galerija { get; set; }
         public virtual ICollection<Komentar> Komentari { get; set; }
 
+        public override string ToString()
+        {
+            return Naslov;
+        }
+
     }
 }

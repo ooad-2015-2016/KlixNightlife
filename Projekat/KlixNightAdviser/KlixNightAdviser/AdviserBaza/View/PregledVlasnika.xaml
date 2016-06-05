@@ -9,10 +9,11 @@
     mc:Ignorable="d" Loaded="Page_Loaded">
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" RenderTransformOrigin="0.067,0.408">
-        <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="Wrap" Text="Dobrodošli" VerticalAlignment="Top"/>
-        <Button x:Name="button" Content="Dodaj novi objekat" HorizontalAlignment="Left" Margin="10,105,0,0" VerticalAlignment="Top" Click="button_Click"/>
-        <Button x:Name="button1" Content="LogOut" HorizontalAlignment="Left" Margin="280,10,0,0" VerticalAlignment="Top" Click="button_Click_1"/>
+        <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Margin="10,63,0,0" TextWrapping="Wrap" Text="Dobrodošli" VerticalAlignment="Top"/>
+        <Button x:Name="button" Content="Dodaj novi objekat" HorizontalAlignment="Left" Margin="10,140,0,0" VerticalAlignment="Top" Click="button_Click"/>
+        <Button x:Name="button1" Content="LogOut" HorizontalAlignment="Left" Margin="290,0,0,0" VerticalAlignment="Top" Click="button_Click_1"/>
         <ListBox x:Name="listBox" HorizontalAlignment="Left" Height="228" VerticalAlignment="Top" Width="276" Margin="10,239,0,0" SelectionChanged="listBox_SelectionChanged"/>
+        <Button x:Name="button2" Content="Početna" HorizontalAlignment="Left" VerticalAlignment="Top" Click="button2_Click"/>
 
     </Grid>
 </Page>

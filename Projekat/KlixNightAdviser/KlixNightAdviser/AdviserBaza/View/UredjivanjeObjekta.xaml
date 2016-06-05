@@ -19,8 +19,9 @@
         <Button x:Name="button1" Content="Update" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="97,564,0,0" RenderTransformOrigin="1.056,7" Width="142" Click="button1_Click"/>
         <ListBox x:Name="listBox" HorizontalAlignment="Left" Height="100" Margin="30,271,0,0" VerticalAlignment="Top" Width="135"/>
         <ListBox x:Name="listBox1" HorizontalAlignment="Left" Height="100" Margin="195,271,0,0" VerticalAlignment="Top" Width="140"/>
-        <Button x:Name="button2" Content="Dodaj događaj" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="30,409,0,0" Width="135"/>
-        <Button x:Name="button3" Content="Dodaj članak" HorizontalAlignment="Left" Margin="195,409,0,0" VerticalAlignment="Top" Width="140"/>
+        <Button x:Name="button2" Content="Dodaj događaj" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="30,409,0,0" Width="135" Click="button2_Click"/>
+        <Button x:Name="button3" Content="Dodaj članak" HorizontalAlignment="Left" Margin="195,409,0,0" VerticalAlignment="Top" Width="140" Click="button3_Click"/>
+        <Button x:Name="button4" Content="Obrisi objekat" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="246,0,0,0" Width="114" Click="button4_Click"/>
 
     </Grid>
 </Page>
